@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100vh;
+    background-size: inherit;
+    background-position: center;
+}
+
+body {
+    position: relative;
+}
+
+.motivation {
+    background-color: rgba(33, 43, 45, 0.7);
+    padding: 2vh 2vw 2vh 3vw;
+    width: 40%;
+    position: absolute;
+    left: 10vw;
+    top: 28vh;
+    border-radius: 20px;
+    animation: display 2s ease-in-out;
+}
+
+@keyframes display {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.text-of-motive {
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size: 44px;
+    color: white;
+}
+
+.text-in-motive {
+    padding-left: 3vw;
+    border-left: 1.5px orange solid;
+    animation: opening 7s ease-in-out;
+    transform-origin: left;
+}
+
+@keyframes opening {
+    0% {
+        transform: scaleX(0);
+    }
+    28.57% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
