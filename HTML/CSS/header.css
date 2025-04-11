@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+}
+
+header {
+    background-color: rgb(211, 211, 211);
+    /*background-color: lightblue;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    height: 40px;
+    margin: 1px 0 0 10px;
+}
+
+header img {
+    height: 40px;
+}
+header h1 {
+    width: 30px;
+    font-family: "Joti One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+header h2 {
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 24px;
+    margin-top: 25px;
+}
