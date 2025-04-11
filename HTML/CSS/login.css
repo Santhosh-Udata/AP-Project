@@ -1,0 +1,59 @@
+/* Center the container */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    /*backdrop-filter: blur(10px);*/
+    font-family: Arial, sans-serif;
+}
+
+/* Login container */
+.login-container {
+    background: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 20vw;
+    text-align: center;
+}
+
+/* Input fields */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 18vw;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit button */
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+    background: rgb(0, 86, 179);
+}
+
+/* Optional: Add some spacing for the labels */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
