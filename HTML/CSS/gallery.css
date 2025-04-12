@@ -1,5 +1,6 @@
-body {
+* {
     margin: 0;
+    padding: 0;
 }
 
 .Heading {
@@ -77,9 +78,9 @@ body {
     top: 250px;
     left: 0;
     right: 0;
-    height: 3000px;
-    background-color: #d7ccba;
+    background-color: rgb(216, 206, 190);
 }
+
 .photos_grid {
     display: grid;
     /*border: 1px solid black;*/
@@ -88,14 +89,15 @@ body {
     justify-content: center;
     margin-top: 30px;
 }
-.photo_cell{
+
+.photo_cell {
     justify-content: center;
     align-items: center;
     height: 280px;
 }
-.gallery_img{
+
+.gallery_img {
     height: 80%;
     width: 85%;
     margin-left: 7.3%;
-    
 }
