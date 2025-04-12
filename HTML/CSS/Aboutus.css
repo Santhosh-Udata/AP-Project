@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: black;
 }
 
 .Heading {
@@ -72,30 +73,59 @@ body {
     text-align: center;
 }
 
-.gallery_section {
+.info {
+    display: flex;
     position: absolute;
     top: 250px;
     left: 0;
     right: 0;
-    height: 3000px;
-    background-color: #d7ccba;
-}
-.photos_grid {
-    display: grid;
-    /*border: 1px solid black;*/
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 30px;
+    height: 1000px;
     justify-content: center;
-    margin-top: 30px;
+    background-image: url(images/lean-man-doing-lateral-raises.webp);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+ 
 }
-.photo_cell{
+.bgcolor{
+    display: flex;
+    position: absolute;
+    top: 00px;
+    left: 0;
+    right: 0;
+    height: 1000px;
     justify-content: center;
-    align-items: center;
-    height: 280px;
+    background-color: rgba(10, 10, 10, 0.646);
 }
-.gallery_img{
-    height: 80%;
-    width: 85%;
-    margin-left: 7.3%;
-    
+.content1 {
+    color: aliceblue;
+    font-family: "Anybody", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 24px;
+}
+.content {
+    margin-top: 50px;
+     width: 80%;
+}
+.bullet{
+    height: 25px;
+    width: 25px;
+}
+.bullet_img{
+    height: 25px;
+    width: 25px;
+}
+.point{
+    display: flex;
+}
+.content2{
+    color: aliceblue;
+    font-family: "Anybody", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: 24px;
+    margin-top: 2px;
+    margin-left: 1%;
 }
