@@ -6,8 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
-    /*backdrop-filter: blur(10px);*/
+    backdrop-filter: blur(10px);
     font-family: Arial, sans-serif;
 }
 
@@ -42,7 +41,6 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 .login-container input[type="submit"]:hover {

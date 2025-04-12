@@ -6,12 +6,6 @@ function header1() {
     document.querySelector(".header").style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     document.querySelector(".profile").src = "images/login-icon-white.png";
     document.querySelector(".store").src = "images/store-icon-white.png";
-
-    document.querySelector(".header").style.transition = "all 0.5s";
-    document.querySelector(".header-title").style.transition = "all 0.5s";
-    document.querySelectorAll(".header-tag").forEach(tag => tag.style.transition = "all 0.5s");
-    document.querySelector(".profile").style.transition = "all 0.5s";
-    document.querySelector(".store").style.transition = "all 0.5s";
 };
 
 function header2() {
@@ -20,23 +14,35 @@ function header2() {
     document.querySelector(".header").style.backgroundColor = "rgb(211,211,211)";
     document.querySelector(".profile").src = "images/login-icon.png";
     document.querySelector(".store").src = "images/store-icon.png";
-
-    document.querySelector(".header").style.transition = "all 0.5s";
-    document.querySelector(".header-title").style.transition = "all 0.5s";
-    document.querySelectorAll(".header-tag").forEach(tag => tag.style.transition = "all 0.5s");
-    document.querySelector(".profile").style.transition = "all 0.5s";
-    document.querySelector(".store").style.transition = "all 0.5s";
 };
 
-window.onscroll = function() {
-    if (window.scrollY <= thresholdheight)
-    {
-        header1();
-        console.log("header1");
+window.onload = function () {
+    const head_param = document.body.dataset.page;
+    if (head_param === "project") {
+        window.onscroll = function () {
+            if (window.scrollY <= thresholdheight) {
+                header1();
+                console.log("header1");
+            }
+            else {
+                header2();
+                console.log("header2");
+            }
+            document.querySelector(".header").style.transition = "all 0.5s";
+            document.querySelector(".header-title").style.transition = "all 0.5s";
+            document.querySelectorAll(".header-tag").forEach(tag => tag.style.transition = "all 0.5s");
+            document.querySelector(".profile").style.transition = "all 0.5s";
+            document.querySelector(".store").style.transition = "all 0.5s";
+        };
     }
-    else
-    {
+    else {
         header2();
-        console.log("header2");
     }
+}
+
+const login = document.querySelector(".profile");
+const loginbox = document.querySelector(".login-box");
+login.onclick = function () {
+    loginbox.style.display = "block";
+    loginbox.style.transition = "all 0.5s";
 };
