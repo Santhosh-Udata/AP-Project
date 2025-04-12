@@ -5,7 +5,7 @@ if (isset($_POST["submit"])) {
 
     if ($username === "admin" && $password === "password") {
         // Redirect to a success page or show message here
-        header("Location: ../intro.html"); // or any other result page
+        header("Location: ../project.html"); // or any other result page
         exit;
     } else {
         // Show alert and redirect back using JavaScript (no header here)
