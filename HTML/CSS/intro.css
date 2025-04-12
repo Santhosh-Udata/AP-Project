@@ -22,7 +22,7 @@ body {
     left: 10vw;
     top: 28vh;
     border-radius: 20px;
-    animation: display 2s ease-in-out;
+    animation: display 0.75s ease-in-out;
 }
 
 @keyframes display {
@@ -48,7 +48,7 @@ body {
 .text-in-motive {
     padding-left: 3vw;
     border-left: 1.5px orange solid;
-    animation: opening 7s ease-in-out;
+    animation: opening 2.5s ease-in-out;
     transform-origin: left;
 }
 
@@ -56,7 +56,7 @@ body {
     0% {
         transform: scaleX(0);
     }
-    28.57% {
+    30% {
         transform: scaleX(0);
     }
     100% {
