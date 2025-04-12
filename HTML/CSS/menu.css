@@ -1,0 +1,48 @@
+.menu-page {
+    padding: 14.28vh 10vw;
+    background-color: rgb(17, 17, 22);
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    gap: 10vw; /* Adjust the gap as needed */
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0;
+}
+
+.menu img{
+    aspect-ratio: calc(1.5/1);
+    width: 20vw;
+    border-radius: 20px;
+}
+
+/*.menu :hover {
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}*/
+
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-title {
+    color: white;
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      font-size: 36px;
+}
