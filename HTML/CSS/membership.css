@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("images/membership.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.member-contain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding: 15vh 0 0 25vh;
+}
+
+.member-ele {
+    height: auto;
+    max-width: 30vw;
+    border-radius: 80px;
+    color: white;
+    line-height: 8vh;
+    padding: 2vh 0;
+    display:flex;
+    flex-direction: column;
+}
+
+.member-title {
+    font-weight: 500;
+    font-size: 36px;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.member-content {
+    height:max-content;
+    flex: 1;
+    padding: 1vh 0 0 5vw;
+    font-weight: 500;
+    font-size: 28px;
+    -webkit-text-stroke: 1px black;
+}
+
+.basic {
+    background-color: rgba(29, 22, 33, 0.7);
+}
+
+.pro {
+    background-color: rgba(69, 54, 54, 0.7);
+}
+
+.custom img {
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 25px;
+}
+
+.buy-membership {
+    text-align: center;
+    color: rgb(163, 199, 213);
+    font-weight: 500;
+    font-size: 24px;
+    text-align: top;
+}
+
+.buy {
+    width: 100px;
+    height: 30px;
+    border-radius: 80px;
+    margin: 0 0 0 1vw;
+    color: white;
+    border: 2px white solid;
+}
+
+.b-2-99, .b-5-99 {
+    background-color: black;
+}
+
+.b-23-99, .b-79-99 {
+    background-color: rgb(45, 26, 26);
+}

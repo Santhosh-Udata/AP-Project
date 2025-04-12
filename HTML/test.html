@@ -19,6 +19,7 @@
             background-color: lightblue;
         }
         .mid{
+            display: flex;
             flex: 12;
             background-color: lightpink;
         }
@@ -30,8 +31,18 @@
 </head>
 <body>
     <div class="header">
-        <div class="left"></div>
-        <div class="mid"></div>
+        <div class="left">
+            <img src="images/logo.png" alt="Logo" style=" height: 20px; object-fit: cover;">
+            GYM Lover
+        </div>
+        <div class="mid">
+            <div class="mid-l" style="flex: 1;"></div>
+            <div class="mid-m" style="display: flex;gap: 30px;">
+                <p>Membership</p>
+                <p>About</p>
+            </div>
+            <div class="mid-r" style="flex: 5;"></div>
+        </div>
         <div class="right"></div>
     </div>
 </body>
