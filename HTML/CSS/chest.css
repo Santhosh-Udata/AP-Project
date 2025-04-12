@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.chest-exercises {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(13.888vw, 1fr));
+}
