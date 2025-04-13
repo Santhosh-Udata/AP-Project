@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu {
+    height: 6vh;
+    width: 100%;
+    background-color: rgb(26, 20, 11);
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    color:white;
+    margin: 50px 0 0 0;
+    
+}
+
+.main-list {
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 1.5vh;
+}
+
+.main-list a {
+    text-decoration: none;
+    color: white;
+}
