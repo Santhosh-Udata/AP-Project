@@ -28,9 +28,69 @@ body {
 
 .chest-exercise img {
     height: 30vh;
-    width:100%;
+    width: 100%;
     display: block;
-    margin:0;
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .chest-exercises {
+        grid-template-columns: repeat(auto-fit, minmax(calc((10 / 36) * 90vw), 1fr));
+        gap: calc((1 / 36) * 90vw);
+        margin: 0 calc(1 / 36 * 90vw);
+    }
+
+    .detail-1 {
+        font-size: 20px;
+    }
+
+    .detail-2 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .chest-exercises {
+        grid-template-columns: repeat(auto-fit, minmax(calc((10 / 36) * 80vw), 1fr));
+        gap: calc((1 / 36) * 80vw);
+        margin: 0 calc(1 / 36 * 80vw);
+    }
+
+    .chest-exercise img {
+        height: 25vh;
+    }
+
+    .detail-1 {
+        font-size: 12px;
+    }
+
+    .detail-2 {
+        font-size: 8px;
+        line-height: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chest-exercises {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin: 0 16px;
+    }
+
+    .chest-exercise img {
+        height: 20vh;
+    }
+
+    .detail-1 {
+        font-size: 16px;
+    }
+
+    .detail-2 {
+        font-size: 8px;
+        line-height: 14px;
+    }
 }
 
 .exercise-details {
