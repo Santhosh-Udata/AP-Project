@@ -65,3 +65,64 @@
     margin: 4px 0 0 0;
     font-weight: 700;
 }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .tips-container {
+        max-width: 75vw;
+    }
+}
+
+/* For screens up to 768px (tablets and small laptops) */
+@media screen and (max-width: 768px) {
+    .tips-container {
+        max-width: 90vw;
+        left: 5vw;
+        top: 2vh;
+        padding: 20px;
+    }
+    .tips-title {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .tip-text {
+        font-size: 22px;
+    }
+    .icon {
+        font-size: 20px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
+
+/* For screens up to 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    .tips-container {
+        max-width: 95vw;
+        left: 2.5vw;
+        top: 2vh;
+        padding: 15px;
+    }
+    .tips-title {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .tip-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .icon {
+        font-size: 18px;
+        margin-right: 8px;
+        margin-top: 15px;
+    }
+}

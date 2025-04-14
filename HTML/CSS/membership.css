@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("images/membership.png");
+    background-image: url("../images/membership.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Anybody", sans-serif;
