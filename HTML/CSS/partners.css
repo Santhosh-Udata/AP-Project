@@ -8,13 +8,10 @@ body {
 }
 
 .Heading {
-    top: 0;
-    left: 0;
-    right: 0;
+    margin-top: 50px;
     height: 250px;
     background-color: rgb(18, 18, 18);
     display: flex;
-    position: absolute;
 }
 
 .Heading_left {
@@ -42,11 +39,11 @@ body {
     width: 100%;
 }
 
-.logo {
+.logo_ptnr {
     flex: 1;
 }
 
-.logo_img {
+.logo_img_ptnr {
     height: 80%;
     width: 70%;
     margin-top: 12%;
@@ -78,10 +75,7 @@ body {
 }
 
 .gallery_section {
-    position: absolute;
-    top: 250px;
-    left: 0;
-    right: 0;
+    padding: 5vh 0 0 0;
     background-color: rgb(215, 204, 186);
     min-height:calc(100vh - 250px);
 }
@@ -91,7 +85,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 30px;
     justify-content: center;
-    margin-top: 30px;
+    
 }
 .photo_cell{
     justify-content: center;

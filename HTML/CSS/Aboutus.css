@@ -4,13 +4,10 @@ body {
 }
 
 .Heading {
-    top: 0;
-    left: 0;
-    right: 0;
+    margin-top: 50px;
     height: 250px;
     background-color: rgb(18, 18, 18);
     display: flex;
-    position: absolute;
 }
 
 .Heading_left {
@@ -38,11 +35,11 @@ body {
     width: 100%;
 }
 
-.logo {
+.logo_abt {
     flex: 1;
 }
 
-.logo_img {
+.logo_img_abt {
     height: 80%;
     width: 70%;
     margin-top: 12%;
@@ -75,11 +72,7 @@ body {
 
 .info {
     display: flex;
-    position: absolute;
-    top: 250px;
-    left: 0;
-    right: 0;
-    height: 1000px;
+    height: 800px;
     justify-content: center;
     background-image: url(images/lean-man-doing-lateral-raises.webp);
     background-size: 100% auto;
@@ -88,10 +81,6 @@ body {
 }
 .bgcolor{
     display: flex;
-    position: absolute;
-    top: 00px;
-    left: 0;
-    right: 0;
     height: 1000px;
     justify-content: center;
     background-color: rgba(10, 10, 10, 0.646);
@@ -99,10 +88,10 @@ body {
 .content1 {
     color: aliceblue;
     font-family: "Anybody", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 24px;
+    font-size: 30px;
 }
 .content {
     margin-top: 50px;
@@ -122,10 +111,10 @@ body {
 .content2{
     color: aliceblue;
     font-family: "Anybody", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 2px;
     margin-left: 1%;
 }

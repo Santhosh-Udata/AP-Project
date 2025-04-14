@@ -4,13 +4,9 @@
 }
 
 .Heading {
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 250px;
+    margin-top: 50px;
     background-color: rgb(18, 18, 18);
     display: flex;
-    position: absolute;
 }
 
 .Heading_left {
@@ -38,7 +34,7 @@
     width: 100%;
 }
 
-.logo {
+.logo-gal {
     flex: 1;
 }
 
@@ -74,10 +70,7 @@
 }
 
 .gallery_section {
-    position: absolute;
-    top: 250px;
-    left: 0;
-    right: 0;
+    padding: 5vh 0 0 0;
     background-color: rgb(216, 206, 190);
 }
 
@@ -87,7 +80,6 @@
     grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
     gap: 30px;
     justify-content: center;
-    margin-top: 30px;
 }
 
 .photo_cell {
