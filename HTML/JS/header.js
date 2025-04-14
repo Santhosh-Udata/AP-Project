@@ -40,3 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+const home = document.querySelector(".header_part1");
+
+home.onmouseover = function () {
+    home.style.cursor = "pointer";
+}
+
+home.onmouseout = function () {
+    home.style.cursor = "default";
+}
+
+home.onclick = function () {
+    window.location.href = "project.html";
+};

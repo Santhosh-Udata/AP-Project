@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bench-Press</title>
-    <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/main-menu.css">
     <link rel="stylesheet" href="CSS/bench-press.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Joti+One&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body data-page="bench-press">
@@ -33,7 +37,7 @@
         </div>
         <div class="header_part3">
             <a href="login.html"><img src="images/login-icon-white.png" class="profile"></a>
-            <img class="store" src="images/store-icon-white.png">
+            <a href="store.html"><img class="store" src="images/store-icon-white.png"></a>
         </div>
     </header>
 
@@ -50,35 +54,13 @@
     </div>
 
 
-    <!-- <div class="flex-container">
-        <div class="flex-item title"><u>Bench-Press</u></div>
-        <div class="flex-item">Item 2</div>
-        <div class="flex-item tracking-img">
-            <img src="images/bench-press-v1.jpg" alt="Bench Press" class="bench-press-image">
-            <form>
-                <label for="done">Done</label>
-                <input type="checkbox" id="done" name="done" value="yes">
-            </form>
-        </div>
-        <div class="flex-item">Item 4</div>
-        <div class="flex-item review">
-            <ol class="review-list">
-                <li>Review 1</li>
-                <li>Review 2</li>
-                <li>Review 3</li>
-        </div>
-        <div class="flex-item">Item 6</div>
-    </div> -->
 
     <div class="container">
 
-        <!-- LEFT COLUMN: Image and Bottom Details -->
         <div class="left-section">
 
-            <!-- Image with Overlay -->
             <h1 class="title">Bench Press</h1>
             <div class="image-container">
-                <!-- Replace with your actual image file path -->
                 <img src="images/bench-press-v1.jpg" alt="Bench Press">
                 <div class="overlay">
                     <div class="done-container">
@@ -88,7 +70,6 @@
                 </div>
             </div>
 
-            <!-- Bottom Details Box (Left Column Only) -->
             <div class="bottom-box">
                 <div class="detail">
                     <p><span class="bullet"><img src="images/bullet.png"></span><u>Type:</u> Compound Exercise</p>
@@ -103,7 +84,6 @@
 
         </div>
 
-        <!-- RIGHT COLUMN: Red‑Transparent Panels -->
         <div class="right-section">
             <div class="panel">
                 <h3>Target Muscle Group</h3>
@@ -129,11 +109,45 @@
                 </ul>
             </div>
         </div>
-
     </div>
+
+    <footer class="footer">
+        <div class="foot-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Contact Us:</h4>
+                    <ul class="icon-list">
+                        <li><span class="material-icons">email</span>gymlover@gmail.com</li>
+                        <li><span class="material-icons">phone</span>140 254 1234</li>
+                        <li><span class="material-icons">place</span>Andhra pradesh</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Social-Media-Handles:</h4>
+                    <div class="social-media">
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick-links:</h4>
+                    <ul class="icon-list-1">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="partners.html">Our partners</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 
     <script src="JS/header.js"></script>
     <script src="JS/main-menu.js"></script>
+    <script src="JS/bench-press.js"></script>
 </body>
 
 </html>
