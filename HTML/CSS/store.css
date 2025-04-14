@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 3000px;
+}
+.container{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    min-width: 670px;
+}
+.container_img{
+    height: 250px;
+    width: 100%;
+}
+.side-bar{
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 80%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+.items-grid{
+    position: absolute;
+    top: 250px;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+}
