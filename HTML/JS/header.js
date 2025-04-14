@@ -16,9 +16,9 @@ function header2() {
     document.querySelector(".store").src = "images/store-icon.png";
 };
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function () {
     const head_param = document.body.dataset.page;
-    if (head_param === "project") {
+    if (head_param == "project") {
         window.onscroll = function () {
             if (window.scrollY <= thresholdheight) {
                 header1();
@@ -38,11 +38,18 @@ window.onload = function () {
     else {
         header2();
     }
+});
+
+const home = document.querySelector(".header_part1");
+
+home.onmouseover = function () {
+    home.style.cursor = "pointer";
 }
 
-const login = document.querySelector(".profile");
-const loginbox = document.querySelector(".login-box");
-login.onclick = function () {
-    loginbox.style.display = "block";
-    loginbox.style.transition = "all 0.5s";
+home.onmouseout = function () {
+    home.style.cursor = "default";
+}
+
+home.onclick = function () {
+    window.location.href = "project.html";
 };

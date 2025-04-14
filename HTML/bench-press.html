@@ -4,21 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Membership</title>
-    <link rel="stylesheet" href="CSS/membership.css">
+    <title>Bench-Press</title>
+    <link rel="stylesheet" href="CSS/main-menu.css">
+    <link rel="stylesheet" href="CSS/bench-press.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Joti+One&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 
-<body data-page="membership">
+<body data-page="bench-press">
 
     <header class="header">
         <div class="header_part1">
@@ -41,44 +42,74 @@
     </header>
 
 
+    <div class="main-menu">
+        <div></div>
+        <div class="chest main-list"><a class="chest" href="chest.html">Chest</a></div>
+        <div class="back main-list"><a class="back" href="#">Back</a></div>
+        <div class="biceps main-list"><a class="biceps" href="#">Biceps</a></div>
+        <div class="shoulders main-list"><a class="shoulders" href="#">Shoulder</a></div>
+        <div class="legs main-list"><a class="legs" href="#">Legs</a></div>
+        <div class="triceps main-list"><a class="triceps" href="#">Triceps</a></div>
+        <div></div>
+    </div>
 
-    <div class="member-contain">
-        <div class="member-ele basic">
-            <div class="basic-title member-title">
-                <h1>BASIC</h1>
+
+
+    <div class="container">
+
+        <div class="left-section">
+
+            <h1 class="title">Bench Press</h1>
+            <div class="image-container">
+                <img src="images/bench-press-v1.jpg" alt="Bench Press">
+                <div class="overlay">
+                    <div class="done-container">
+                        <label for="done">Done</label>
+                        <input type="checkbox" id="done">
+                    </div>
+                </div>
             </div>
-            <div class="basic-ele member-content">
-                <ul class="custom">
-                    <li><span><img src="images/custom-bullet.png"></span>Daily Tracker</li>
-                    <li><span><img src="images/custom-bullet.png"></span>Know Every Exercise</li>
-                    <li><span><img src="images/custom-bullet.png"></span>Daily Challenges</li>
-                </ul>
+
+            <div class="bottom-box">
+                <div class="detail">
+                    <p><span class="bullet"><img src="images/bullet.png"></span><u>Type:</u> Compound Exercise</p>
+                </div>
+                <div class="detail">
+                    <p><span class="bullet"><img src="images/bullet.png"></span><u>Movement:</u> Horizontal Push</p>
+                </div>
+                <div class="detail">
+                    <p><span class="bullet"><img src="images/bullet.png"></span><u>Equipment:</u> Barbell, Flat Bench</p>
+                </div>
             </div>
-            <div class="buy-membership">
-                <h2>$2.99/Month<button class="buy b-2-99">Buy Now</button></h2>
-                <h2>$23.99/Year<button class="buy b-23-99">Buy Now</button></h2>
-            </div>
+
         </div>
-        <div class="member-ele pro">
-            <div class="pro-title member-title">
-                <h1>PRO</h1>
+
+        <div class="right-section">
+            <div class="panel">
+                <h3>Target Muscle Group</h3>
+                <p><strong>Primary:</strong> Pectoralis Major (Mid Chest)</p>
+                <p><strong>Secondary:</strong> Triceps, Anterior Deltoids (Front Shoulders)</p>
             </div>
-            <div class="pro-ele member-content">
-                <ul class="custom">
-                    <li><span><img src="images/custom-bullet.png"></span>Daily Tracker</li>
-                    <li><span><img src="images/custom-bullet.png"></span>Know Every Exercise</li>
-                    <li><span><img src="images/custom-bullet.png"></span>Daily Challenges</li>
-                    <li><span><img src="images/custom-bullet.png"></span>Online Consultation</li>
-                    <li><span><img src="images/custom-bullet.png"></span>Daily Challenges</li>
+
+            <div class="panel">
+                <h3>Recommended Reps &amp; Sets</h3>
+                <ul>
+                    <li>For Muscle Growth: 3-4 sets of 8-12 reps</li>
+                    <li>For Strength: 4-6 sets of 3-6 reps</li>
+                    <li>For Endurance: 2-3 sets of 12-20 reps</li>
                 </ul>
             </div>
-            <div class="buy-membership">
-                <h2>$5.99/Month<button class="buy b-5-99">Buy Now</button></h2>
-                <h2>$79.99/Year<button class="buy b-79-99">Buy Now</button></h2>
+
+            <div class="panel">
+                <h3>Key Benefits</h3>
+                <ul>
+                    <li>Builds upper body strength</li>
+                    <li>Enhances chest muscle size and definition</li>
+                    <li>Engages multiple muscle groups for efficient training</li>
+                </ul>
             </div>
         </div>
     </div>
-
 
     <footer class="footer">
         <div class="foot-container">
@@ -112,10 +143,11 @@
             </div>
         </div>
     </footer>
+    
 
-
-    <script src="JS/membership.js"></script>
     <script src="JS/header.js"></script>
+    <script src="JS/main-menu.js"></script>
+    <script src="JS/bench-press.js"></script>
 </body>
 
 </html>

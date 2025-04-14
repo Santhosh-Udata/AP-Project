@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url("images/membership.png");
+    background-image: url("../images/membership.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Anybody", sans-serif;
@@ -31,7 +31,7 @@ body {
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     padding: 5vh 0 0 25vh;
-    margin: 10vh 0 0 0;
+    margin: 10vh 0;
 }
 
 .member-ele {
