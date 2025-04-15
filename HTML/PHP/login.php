@@ -1,22 +1,34 @@
 <?php
+
+include ("database.php");
+
 if (isset($_POST["submit"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    if ($username === "admin" && $password === "password") {
-        // Redirect to a success page or show message here
-        header("Location: ../project.html"); // or any other result page
-        exit;
-    } else {
-        // Show alert and redirect back using JavaScript (no header here)
-        echo "<script>
-                alert('Invalid username or password. Please try again.');
-                window.location.href = '../login.html';
-              </script>";
+    try {
+        $sql = "SELECT * FROM login WHERE username = :username";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(':username', $username);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        if ($result) {
+            if (password_verify($password, $result['password'])) {
+                header("Location: ../project.html");
+                exit;
+            } else {
+                echo "<script>
+                        alert('Invalid username or password. Please try again.');
+                        window.location.href = '../login.html';
+                      </script>";
+                exit;
+            }
+        }
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
         exit;
     }
 }
-// If someone directly opens this PHP file
 header("Location: ../login.html");
 exit;
 ?>
