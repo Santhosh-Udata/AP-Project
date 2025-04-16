@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 include ("database.php");
 
 if (isset($_POST["submit"])) {
@@ -14,7 +16,8 @@ if (isset($_POST["submit"])) {
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
         if ($result) {
             if (password_verify($password, $result['password'])) {
-                header("Location: ../project.html");
+                $_SESSION["username"] = $username;
+                header("Location: ../project.php");
                 exit;
             } else {
                 echo "<script>

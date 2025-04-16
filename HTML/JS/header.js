@@ -53,3 +53,8 @@ home.onmouseout = function () {
 home.onclick = function () {
     window.location.href = "project.html";
 };
+
+const prof = document.querySelector(".profile");
+prof.onclick = function () {
+    window.location.href = "check-login.php";
+};
