@@ -51,10 +51,21 @@ home.onmouseout = function () {
 }
 
 home.onclick = function () {
-    window.location.href = "project.html";
+    if (username) {
+        window.location.href = `project.php?username=${username}`;
+    } else {
+        window.location.href = "project.php";
+    }
 };
 
-const prof = document.querySelector(".profile");
-prof.onclick = function () {
-    window.location.href = "check-login.php";
+
+
+const acc = document.querySelector(".profile");
+
+acc.onmouseover = function () {
+    acc.style.cursor = "pointer";
 };
+
+acc.onclick = function () {
+    window.location.href = `${FilePath}.html`;
+}

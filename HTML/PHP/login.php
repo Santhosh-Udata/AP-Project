@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
         if ($result) {
             if (password_verify($password, $result['password'])) {
                 $_SESSION["username"] = $username;
-                header("Location: ../project.php");
+                header("Location: ../project.php?username=" . urlencode($username));
                 exit;
             } else {
                 echo "<script>

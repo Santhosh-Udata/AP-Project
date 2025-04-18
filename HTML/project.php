@@ -1,3 +1,21 @@
+<?php
+$login_param = $_GET['username'] ?? null;
+
+if ($login_param) {
+    echo "<script>
+        let FilePath = 'profile';
+        let username = '$login_param';
+    </script>";
+} else {
+    echo "<script>
+        let FilePath = 'login';
+        let username = null;
+    </script>";
+}
+
+echo '<script src="header.js"></script>';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +57,7 @@
             <div class="part2_c"></div>
         </div>
         <div class="header_part3">
-            <a href="login.html"><img src="images/login-icon-white.png" class="profile"></a>
+            <img src="images/login-icon-white.png" class="profile">
             <a href="store.html"><img class="store" src="images/store-icon-white.png"></a>
         </div>
     </header>
@@ -162,7 +180,7 @@
         </div>
     </footer>
 
-    
+
     <script src="JS/header.js"></script>
     <script src="JS/intro.js"></script>
     <script src="JS/menu.js"></script>

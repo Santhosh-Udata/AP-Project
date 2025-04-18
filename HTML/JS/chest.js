@@ -22,10 +22,15 @@ menus.forEach(menu => {
     });
 });
 
-document.querySelector(".bench-press").onclick = function () {
+document.querySelector(".chest-exercise").onclick = function () {
+    const param = document.getElementById("bench-press").value;
+    window.location.href = "layout.php?param=" + encodeURIComponent(param);
+};
+
+document.querySelector("#bench-press").onclick = function () {
     window.location.href = "bench-press.html";
-}
+};
 
 document.querySelector(".cable-pec-fly").onclick = function () {
     window.location.href = "cable-pec-fly.html";
-}
+};
