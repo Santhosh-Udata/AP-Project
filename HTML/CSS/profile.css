@@ -93,10 +93,10 @@ h1{
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-    margin-left: 20%; /* Adjusted to ensure it is beside the sidebar */
     box-sizing: border-box;
     margin-top: 70px;
     margin-bottom: 40px;
+    margin-left: 18%;
 }
 .profile-photo-div {
     margin-top: 50px;
@@ -111,7 +111,8 @@ h1{
     border-radius: 50%;
 }
 .form-group {
-    width: 100%;
+   
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-around;
