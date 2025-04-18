@@ -40,23 +40,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-const home = document.querySelector(".header_part1");
 
-home.onmouseover = function () {
-    home.style.cursor = "pointer";
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const home = document.querySelector(".header_part1");
 
-home.onmouseout = function () {
-    home.style.cursor = "default";
-}
-
-home.onclick = function () {
-    if (username) {
-        window.location.href = `project.php?username=${username}`;
-    } else {
-        window.location.href = "project.php";
+    home.onmouseover = function () {
+        home.style.cursor = "pointer";
     }
-};
+
+    home.onmouseout = function () {
+        home.style.cursor = "default";
+    }
+
+    home.onclick = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        if (username) {
+            window.location.href = `project.php?username=${encodeURIComponent(username)}`;
+        } else {
+            window.location.href = "project.php";
+        }
+    };
+});
 
 
 
