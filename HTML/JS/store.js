@@ -4,11 +4,12 @@ function changeColor(button) {
     buttons.forEach(btn => btn.style.backgroundColor = '#f0f0f0');
 
     // Change the clicked button's color
-    button.style.backgroundColor = '#a0c4ff';
+    button.style.backgroundColor = '#E5C44F';
+
 
     // Ensure sidebar is visible from top to bottom after scrolling 250px
 }
-const sidebar = document.querySelector('.side-bar');
+/*const sidebar = document.querySelector('.side-bar');
 window.onscroll = function () {
     if (window.scrollY > 250) {
         sidebar.style.position = 'fixed';
@@ -18,4 +19,4 @@ window.onscroll = function () {
         sidebar.style.position = 'absolute';
         sidebar.style.top = '250px';
     }
-};
+};*/
