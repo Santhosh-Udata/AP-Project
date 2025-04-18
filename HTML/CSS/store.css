@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    height: 3000px;
 }
 
 .container {
     display: flex;
+    margin-top: 50px;
     min-width: 670px;
 }
 
@@ -12,11 +12,16 @@ body {
     height: 250px;
     width: 100%;
 }
-
+.Store{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+    height: 900px;
+    overflow: hidden;
+    grid-template-rows: 1fr auto;
+}
 .side-bar {
-    background-color: #f1f1f1;
-    position: fixed;
-    top: 250px;
+    background-color: #eae7e7e6;
+    top: 300px;
     left: 0;
     right: 80%;
     bottom: 0;
@@ -27,27 +32,33 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-top: 20px;
+    height: 900px;
 }
 
 .sidebar-btn {
     padding: 10px 20px;
-    border: none;
+    border: 1;
     background-color: #f0f0f0;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-family: 'Anybody', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
 }
 
 .sidebar-btn:hover {
     background-color: #ddd;
 }
-
+.items-grid {
+    overflow-y: auto;
+    height: calc(100vh - 40px); 
+}
 .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 50px;
     padding: 20px;
-    margin-left: 20%;
 }
 .item-cell{
     border: 1px solid #ccc;
