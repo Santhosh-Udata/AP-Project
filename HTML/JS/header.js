@@ -72,5 +72,6 @@ acc.onmouseover = function () {
 };
 
 acc.onclick = function () {
-    window.location.href = `${FilePath}.html`;
+    window.location.href = `${FilePath}.html?username=${localStorage.getItem("user_name")}`;
 }
+

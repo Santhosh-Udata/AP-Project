@@ -4,14 +4,13 @@ $login_param = $_GET['username'] ?? null;
 if ($login_param) {
     echo "<script>
         let FilePath = 'profile';
-        let username = '$login_param';
-    </script>";
-} else {
-    echo "<script>
+        </script>";
+    } else {
+        echo "<script>
         let FilePath = 'login';
-        let username = null;
-    </script>";
-}
+        </script>";
+    }
+    echo "<script>localStorage.setItem('user_name', '$login_param');</script>";
 
 echo '<script src="header.js"></script>';
 ?>
