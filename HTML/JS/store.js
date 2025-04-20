@@ -32,17 +32,3 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });  
-
-/*function handleScroll() {
-    const sidebar = document.querySelector('.side-bar');
-    const scrollY = window.scrollY || window.pageYOffset;
-
-    if (scrollY > 250) {
-        sidebar.style.position = 'fixed';
-        sidebar.style.top = '20px';
-        sidebar.style.width = `${sidebar.offsetWidth}px`;
-    } else {
-        sidebar.style.position = 'static';
-        sidebar.style.width = 'auto';
-    }
-}*/
