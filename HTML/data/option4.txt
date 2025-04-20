@@ -1,5 +1,5 @@
 image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton Shirt|price=19.99|discount=15
 image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
 image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
 image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=

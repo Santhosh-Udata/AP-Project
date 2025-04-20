@@ -1,15 +1,16 @@
 <?php
+// Redirect back if required parameters are missing
 if (!isset($_GET['image']) || !isset($_GET['name'])) {
-    header("Location: store.php");
-    exit();
+    header('Location: store.php');
+    exit;
 }
 
+// Build item array
 $item = [
     'image' => htmlspecialchars($_GET['image']),
     'name' => htmlspecialchars($_GET['name']),
-    'price' => isset($_GET['price']) ? (float) $_GET['price'] : 0,
-    'discount' => $_GET['discount'] ?? '',
-    'option' => isset($_GET['option']) ? (int) $_GET['option'] : 1
+    'basePrice' => 7.99,       // price before discount
+    'discount' => 60,         // percent off
 ];
 ?>
 <!DOCTYPE html>
@@ -57,16 +58,45 @@ $item = [
     </header>
 
     <div class="item-details">
-        <img src="<?= $item['image'] ?>" class="detail-img">
-        <h2><?= $item['name'] ?></h2>
-        <div class="price">$<?= number_format($item['price'], 2) ?></div>
-        <?php if (!empty($item['discount'])): ?>
-            <div class="discount"><?= $item['discount'] ?>% off</div>
-        <?php endif; ?>
-        <button onclick="window.location='store.php?option=<?= $item['option'] ?>'" class="back-btn">
-            ← Back to Store
-        </button>
+        <img src="<?= $item['image'] ?>" alt="<?= $item['name'] ?>" class="detail-img">
+        <div class="details">
+            <h2><?= $item['name'] ?></h2>
+            <div class="price-section">
+                <div id="price">$<?= number_format($item['basePrice'], 2) ?></div>
+                <div class="discount"><?= $item['discount'] ?>% off</div>
+            </div>
+            <div class="sizes" id="sizes">
+                <?php foreach (['S', 'M', 'L', 'XL', 'XXL'] as $sz): ?>
+                    <button class="size-btn" data-size="<?= $sz ?>"><?= $sz ?></button>
+                <?php endforeach; ?>
+            </div>
+            <select id="quantity">
+                <?php for ($i = 1; $i <= 6; $i++): ?>
+                    <option value="<?= $i ?>"><?= $i ?></option>
+                <?php endfor; ?>
+            </select>
+            <button id="buy-now" class="buy-btn">Buy Now</button>
+            <div class="description">
+                <h3>Description:</h3>
+                <p>Experience peak performance with our lightweight, breathable vest designed for maximum mobility and
+                    durability. Whether you're training or relaxing, this vest keeps you looking sharp and feeling
+                    great.</p>
+            </div>
+        </div>
     </div>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal">
+      <p id="modal-text">Final Amount: $0.00</p>
+      <div class="modal-actions">
+        <button id="confirm-btn">Confirm</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+   
 
     <footer class="footer">
         <div class="foot-container">
@@ -102,6 +132,14 @@ $item = [
 
     </footer>
     <script src="JS/header.js"></script>
+    <script>
+        window.itemConfig = {
+            basePrice: <?= $item['basePrice'] ?>,
+            discountRate: <?= $item['discount'] ?> / 100
+        };
+    </script>
+    <script src="JS/individual_item.js"></script>
+
 </body>
 
 </html>
