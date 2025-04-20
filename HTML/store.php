@@ -58,7 +58,7 @@ $selected_option = isset($_GET['option']) ? max(1, min(8, (int) $_GET['option'])
                 <div class="nav-link require-login" data-href="membership.html">
                     <p class="header-tag">MEMBERSHIP</p>
                 </div>
-                <div class="nav-link" data-href="store.html">
+                <div class="nav-link" data-href="store.php">
                     <p class="header-tag">STORE</p>
                 </div>
             </div>
