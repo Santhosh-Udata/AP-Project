@@ -34,6 +34,7 @@ $selected_option = isset($_GET['option']) ? max(1, min(8, (int) $_GET['option'])
     <title>Document</title>
     <link rel="stylesheet" href="CSS/store.css">
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link

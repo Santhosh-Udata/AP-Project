@@ -20,6 +20,7 @@ $item = [
     <title><?= $item['name'] ?> - Gym Lover</title>
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/modal.css">
     <link rel="stylesheet" href="CSS/individual_item.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -86,12 +87,12 @@ $item = [
     </div>
 
   <!-- Modal -->
-  <div id="modal-overlay" class="modal-overlay hidden">
-    <div class="modal">
-      <p id="modal-text">Final Amount: $0.00</p>
-      <div class="modal-actions">
-        <button id="confirm-btn">Confirm</button>
-        <button id="cancel-btn">Cancel</button>
+  <div id="modal-overlay-item" class="modal-overlay-item hidden-item">
+    <div class="modal-item">
+      <p id="modal-text-item">Final Amount: $0.00</p>
+      <div class="modal-actions-item">
+        <button id="confirm-btn-item">Confirm</button>
+        <button id="cancel-btn-item">Cancel</button>
       </div>
     </div>
   </div>

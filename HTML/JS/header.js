@@ -41,9 +41,83 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// header.js
+document.addEventListener('DOMContentLoaded', () => {
+    // Inject both modals:
+    document.body.insertAdjacentHTML('beforeend', `
+        <!-- Login Modal -->
+        <div id="login-modal" class="modal-overlay hidden">
+        <div class="modal">
+        <div class="login-container">
+        <h1>Login Page</h1>
+        <form action="PHP/login.php" method="POST">
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="Login" name="submit">
+                </form>
+            <button id="register-switch" class="switch">Don't have an account? Register</button>
+            <button class="back">Back</button>
+        </div>
+        </div>
+        </div>
+        
+      <!-- Register Modal -->
+      <div id="register-modal" class="modal-overlay hidden">
+        <div class="modal">
+    <div class="register-container">
+    <h1>Register Page</h1>
+        <form action="PHP/register.php" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+            <input type="submit" value="Register" name="submit">
+            </form>
+            <button id="login-switch" class="switch">Already have an account? Login</button>
+        <button class="back">Back</button>
+        </div>
+        </div>
+      </div>
+      `);
+
+    // Grab elements
+    const loginModal = document.getElementById('login-modal');
+    const registerModal = document.getElementById('register-modal');
+    const openLogin = () => { loginModal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; };
+    const openRegister = () => { registerModal.classList.remove('hidden'); document.body.style.overflow = 'hidden'; };
+    const closeAll = () => {
+        loginModal.classList.add('hidden');
+        registerModal.classList.add('hidden');
+        document.body.style.overflow = '';
+    };
+
+    // Expose for global access
+    window.openLogin = openLogin;
+    window.openRegister = openRegister;
+    window.closeAll = closeAll;
+
+    // Switch between modals
+    document.getElementById('login-switch').addEventListener('click', () => {
+        closeAll();
+        openLogin();
+    });
+    document.getElementById('register-switch').addEventListener('click', () => {
+        closeAll();
+        openRegister();
+    });
+
+    // Cancel buttons
+    document.querySelectorAll('.back').forEach(button => {
+        button.addEventListener('click', closeAll);
+    });
+});
 
 // header.js
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Sync URL parameters with sessionStorage
     const urlParams = new URLSearchParams(window.location.search);
     const urlUsername = urlParams.get('username');
@@ -55,27 +129,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update all navigation links
     document.querySelectorAll('.nav-link').forEach(link => {
-        link.onmouseover = function() {
+        link.onmouseover = function () {
             link.style.cursor = "pointer";
         }
         const basePath = link.dataset.href;
-        link.onclick = function(e) {
+        link.onclick = function (e) {
             if (link.classList.contains('require-login') && !username) {
                 e.preventDefault();
                 alert('Please login to access membership!');
-                window.location.href = 'login.html';
+                openLogin();
                 return;
             }
-            
+
             // For regular links
-            window.location.href = username ? 
-                `${basePath}?username=${username}` : 
+            window.location.href = username ?
+                `${basePath}?username=${username}` :
                 basePath;
         };
     });
 });
 
-document.querySelector('#profile-link').onmouseover = function() {
+document.querySelector('#profile-link').onmouseover = function () {
     document.querySelector('#profile-link').style.cursor = "pointer";
 };
 
@@ -83,7 +157,7 @@ document.querySelector('#profile-link').onmouseover = function() {
 function handleProfileClick() {
     const username = sessionStorage.getItem('currentUser');
     if (!username) {
-        window.location.href = 'login.html';
+        openLogin();
     } else {
         window.location.href = `profile.html?username=${username}`;
     }

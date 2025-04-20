@@ -1,0 +1,124 @@
+/* CSS/modals.css */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    /* top/right/bottom/left = 0 */
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.hidden {
+    display: none;
+}
+
+/* link‑style switches */
+#login-switch,
+#register-switch {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.login-container {
+    background: rgb(255, 255, 255);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 20vw;
+    text-align: center;
+}
+
+/* Input fields */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 18vw;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Submit button */
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background: rgb(0, 86, 179);
+}
+
+/* Optional: Add some spacing for the labels */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+
+.register-container {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 21vw;
+    text-align: center;
+}
+
+/* Heading */
+.register-container h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+    width: 19vw;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
