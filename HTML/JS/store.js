@@ -20,20 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-/*function changeOption(optionNumber, btn) {
-
-    // 1) Remove `.active` from whatever was active…
-    document
-        .querySelectorAll('.sidebar-btn.active')
-        .forEach(el => el.classList.remove('active'));
-
-    // 2) Add `.active` to the one we just clicked
-    btn.classList.add('active');
-
-    // 3) Now reload with the new parameter
-    //    (this also ensures your PHP sees the new option)
-    window.location.href = `store.php?option=${optionNumber}`;
-}*/
 
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.sidebar-btn').forEach(btn => {
