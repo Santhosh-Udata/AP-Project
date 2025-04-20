@@ -41,37 +41,56 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const home = document.querySelector(".header_part1");
 
-    home.onmouseover = function () {
-        home.style.cursor = "pointer";
+// header.js
+document.addEventListener('DOMContentLoaded', function() {
+    // Sync URL parameters with sessionStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlUsername = urlParams.get('username');
+    if (urlUsername) {
+        sessionStorage.setItem('currentUser', urlUsername);
     }
 
-    home.onmouseout = function () {
-        home.style.cursor = "default";
-    }
+    const username = sessionStorage.getItem('currentUser');
 
-    home.onclick = function () {
-        const urlParams = new URLSearchParams(window.location.search);
-        const username = urlParams.get('username');
-        if (username) {
-            window.location.href = `project.php?username=${encodeURIComponent(username)}`;
-        } else {
-            window.location.href = "project.php";
+    // Update all navigation links
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.onmouseover = function() {
+            link.style.cursor = "pointer";
         }
-    };
+        const basePath = link.dataset.href;
+        link.onclick = function(e) {
+            if (link.classList.contains('require-login') && !username) {
+                e.preventDefault();
+                alert('Please login to access membership!');
+                window.location.href = 'login.html';
+                return;
+            }
+            
+            // For regular links
+            window.location.href = username ? 
+                `${basePath}?username=${username}` : 
+                basePath;
+        };
+    });
 });
 
-
-
-const acc = document.querySelector(".profile");
-
-acc.onmouseover = function () {
-    acc.style.cursor = "pointer";
+document.querySelector('#profile-link').onmouseover = function() {
+    document.querySelector('#profile-link').style.cursor = "pointer";
 };
 
-acc.onclick = function () {
-    window.location.href = `${FilePath}.html?username=${localStorage.getItem("user_name")}`;
-}
+// Profile image handler
+function handleProfileClick() {
+    const username = sessionStorage.getItem('currentUser');
+    if (!username) {
+        window.location.href = 'login.html';
+    } else {
+        window.location.href = `profile.html?username=${username}`;
+    }
+};
 
+// Logout function
+function logout() {
+    sessionStorage.removeItem('currentUser');
+    window.location.href = 'login.html';
+}

@@ -40,18 +40,13 @@ header {
     margin-top: 10px;
 }
 
-.part2_b a {
-    text-decoration: none;
+.part2_b p {
     color: white;
     font-family: "Anybody", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-variation-settings: "wdth" 100;
     font-size: 24px;
-}
-
-.part2_b a :hover {
-    text-decoration: underline;
 }
 
 .part2_c {
