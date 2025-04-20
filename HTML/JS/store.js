@@ -1,22 +1,62 @@
-function changeColor(button) {
-    // Reset all buttons to default color
-    const buttons = document.querySelectorAll('.sidebar-btn');
-    buttons.forEach(btn => btn.style.backgroundColor = '#f0f0f0');
+document.addEventListener('DOMContentLoaded', function () {
+    // Set initial active state
+    const initialOption = document.querySelector('.sidebar-btn.active');
 
-    // Change the clicked button's color
-    button.style.backgroundColor = '#E5C44F';
+    // Add scroll handler
+    window.addEventListener('scroll', handleScroll);
 
+    // Add click handlers for items
+    document.querySelectorAll('.item-cell').forEach(item => {
+        item.addEventListener('click', function () {
+            const currentOption = document.querySelector('.sidebar-btn.active').textContent.replace('Option ', '');
+            const itemData = {
+                image: this.querySelector('img').src,
+                name: this.querySelector('.item_name').textContent,
+                price: this.querySelector('.price').textContent.replace('$', ''),
+                discount: this.querySelector('.discount')?.textContent.replace('% off', '') || ''
+            };
+            window.location.href = `individual_item.php?${new URLSearchParams(itemData).toString()}&option=${currentOption}`;
+        });
+    });
+});
 
-    // Ensure sidebar is visible from top to bottom after scrolling 250px
-}
-/*const sidebar = document.querySelector('.side-bar');
-window.onscroll = function () {
-    if (window.scrollY > 250) {
+/*function changeOption(optionNumber, btn) {
+
+    // 1) Remove `.active` from whatever was active…
+    document
+        .querySelectorAll('.sidebar-btn.active')
+        .forEach(el => el.classList.remove('active'));
+
+    // 2) Add `.active` to the one we just clicked
+    btn.classList.add('active');
+
+    // 3) Now reload with the new parameter
+    //    (this also ensures your PHP sees the new option)
+    window.location.href = `store.php?option=${optionNumber}`;
+}*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.sidebar-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const optionNumber = btn.dataset.option;
+        document.querySelectorAll('.sidebar-btn.active')
+                .forEach(el => el.classList.remove('active'));
+        btn.classList.add('active');
+        window.location.href = `store.php?option=${optionNumber}`;
+      });
+    });
+  });  
+
+/*function handleScroll() {
+    const sidebar = document.querySelector('.side-bar');
+    const scrollY = window.scrollY || window.pageYOffset;
+
+    if (scrollY > 250) {
         sidebar.style.position = 'fixed';
-        sidebar.style.top = '0';
-        sidebar.style.bottom = '0';
+        sidebar.style.top = '20px';
+        sidebar.style.width = `${sidebar.offsetWidth}px`;
     } else {
-        sidebar.style.position = 'absolute';
-        sidebar.style.top = '250px';
+        sidebar.style.position = 'static';
+        sidebar.style.width = 'auto';
     }
-};*/
+}*/

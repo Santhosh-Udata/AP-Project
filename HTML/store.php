@@ -1,22 +1,48 @@
+<?php
+// Helper function to read items
+function get_store_items($option)
+{
+    $file = "data/option$option.txt";
+    $items = [];
+
+    if (file_exists($file)) {
+        $lines = file($file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line) {
+            $parts = explode('|', $line);
+            $item = [];
+            foreach ($parts as $part) {
+                list($key, $value) = explode('=', $part);
+                $item[trim($key)] = trim($value);
+            }
+            $items[] = $item;
+        }
+    }
+    return $items;
+}
+
+$selected_option = isset($_GET['option']) ? max(1, min(8, (int) $_GET['option'])) : 1;
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual_item</title>
-    <link rel="stylesheet" href="CSS/individual_item.css">
-    <link rel="stylesheet" href="CSS/footer.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/store.css">
     <link rel="stylesheet" href="CSS/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Joti+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -29,58 +55,58 @@
         <div class="header_part2">
             <div class="part2_a"></div>
             <div class="part2_b">
-                <div class="nav-link require-login" data-href="membership.html"><p class="header-tag">MEMBERSHIP</p></div>
-                <div class="nav-link" data-href="store.html"><p class="header-tag">STORE</p></div>
+                <div class="nav-link require-login" data-href="membership.html">
+                    <p class="header-tag">MEMBERSHIP</p>
+                </div>
+                <div class="nav-link" data-href="store.html">
+                    <p class="header-tag">STORE</p>
+                </div>
             </div>
             <div class="part2_c"></div>
         </div>
         <div class="header_part3">
-            <img src="images/login-icon-white.png" class="profile" id="profile-link" onclick="handleProfileClick()" alt="Profile Icon">
-            <img class="store nav-link" src="images/store-icon-white.png" data-href="store.html" alt="store">
+            <img src="images/login-icon-white.png" class="profile" id="profile-link" onclick="handleProfileClick()"
+                alt="Profile Icon">
+            <img class="store nav-link" src="images/store-icon-white.png" data-href="store.php" alt="store">
         </div>
     </header>
-    <div class="Item">
-        <div class="Item-image-div">
-            <img src="images/71O4LIW9k1L._AC_UY1100_.jpg" class="Item-image">
+
+
+    <div class="container">
+        <img src="images/container_store.png" class="container_img">
+    </div>
+
+    <div class="Store">
+        <div class="side-bar">
+            <?php for ($i = 1; $i <= 8; $i++): ?>
+                <button class="sidebar-btn <?= $i === $selected_option ? 'active' : '' ?>" data-option="<?= $i ?>">
+                    Option <?= $i ?>
+                </button>
+            <?php endfor; ?>
         </div>
-        <div class="Item-details">
-            <p class="Item-name">Bodyband Men's vest</p>
-            <div class="price">
-                <p class="Item-price">$7.99</p>
-                <p class="discount">60% off</p>
-            </div>
-            <div class="Item-size">
-                <p class="size">Size:</p>
-                <button class="size-button">S</button>
-                <button class="size-button">M</button>
-                <button class="size-button">L</button>
-                <button class="size-button">XL</button>
-                <button class="size-button">XXL</button>
-            </div>
-            <div class="quantity-div">
-                <p class="quantity" >Quantity</p>
-                <select class="quantity-select">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="Item-buttons">
-                <button class="Buy-now">Buy Now</button>
-                <button class="add-to-cart">Add to cart</button>
-            </div>
-            <div class="description-div">
-                <p class="description">Description:</p>
-                <p class="description-content">
-                    Experience peak performance with our lightweight, breathable vest designed
-                    for maximum mobility and durability. Whether you're training or relaxing,
-                    this vest keeps you looking sharp and feeling great.
-                </p>
-            </div>
+
+        <div class="items-grid">
+            <?php foreach (get_store_items($selected_option) as $item): ?>
+                <div class="item-cell"
+                    onclick="window.location='individual_item.php?<?= http_build_query($item) ?>&option=<?= $selected_option ?>'">
+                    <div class="item">
+                        <img src="<?= htmlspecialchars($item['image']) ?>" class="item_img">
+                    </div>
+                    <div class="item_info">
+                        <div class="item_name"><?= htmlspecialchars($item['name']) ?></div>
+                        <div class="price_and_discount">
+                            <div class="price">$<?= number_format($item['price'], 2) ?></div>
+                            <?php if (!empty($item['discount'])): ?>
+                                <div class="discount"><?= $item['discount'] ?>% off</div>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
+
+
     <footer class="footer">
         <div class="foot-container">
             <div class="row">
@@ -112,8 +138,10 @@
                 </div>
             </div>
         </div>
+
     </footer>
     <script src="JS/header.js"></script>
+    <script src="JS/store.js"></script>
 </body>
 
 </html>
