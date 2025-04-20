@@ -21,6 +21,16 @@ function get_store_items($option)
 }
 
 $selected_option = isset($_GET['option']) ? max(1, min(8, (int) $_GET['option'])) : 1;
+$option = [
+    1 => 'Outfit',
+    2 => 'New Arrivals',
+    3 => 'Best Sellers',
+    4 => 'Foot Wear',
+    5 => 'Sports',
+    6 => 'Equipment',
+    7 => 'Accessories',
+    8 => 'Guides'
+];
 ?>
 
 
@@ -81,7 +91,7 @@ $selected_option = isset($_GET['option']) ? max(1, min(8, (int) $_GET['option'])
         <div class="side-bar">
             <?php for ($i = 1; $i <= 8; $i++): ?>
                 <button class="sidebar-btn <?= $i === $selected_option ? 'active' : '' ?>" data-option="<?= $i ?>">
-                    Option <?= $i ?>
+                    <?= $option[$i] ?>
                 </button>
             <?php endfor; ?>
         </div>
@@ -131,7 +141,7 @@ $selected_option = isset($_GET['option']) ? max(1, min(8, (int) $_GET['option'])
                 <div class="footer-col">
                     <h4>Quick-links:</h4>
                     <ul class="icon-list-1">
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="partners.html">Our partners</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="#">Guidelines</a></li>

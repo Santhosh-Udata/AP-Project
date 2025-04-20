@@ -1,3 +1,18 @@
+<?php
+$folder = 'images/gallery-images/';
+$images = [];
+
+if (is_dir($folder)) {
+    $files = scandir($folder);
+    foreach ($files as $file) {
+        if ($file !== '.' && $file !== '..') {
+            $images[] = $folder . $file;
+        }
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,78 +80,17 @@
     </div>
     <div class="gallery_section">
         <div class="photos_grid">
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/biceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
-            <div class="photo_cell">
-                <img src="images/triceps.png" class="gallery_img">
-            </div>
+
+            <?php if (!empty($images)) : ?>
+                <?php foreach ($images as $image) : ?>
+                    <div class="photo_cell">
+                        <img src="<?= $image ?>" class="gallery_img" alt="Image">
+                    </div>
+                <?php endforeach; ?>
+            <?php else : ?>
+                <p>No images found in the directory.</p>
+            <?php endif; ?>
+
         </div>
     </div>
     <footer class="footer">
@@ -162,7 +116,7 @@
                 <div class="footer-col">
                     <h4>Quick-links:</h4>
                     <ul class="icon-list-1">
-                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="gallery.php">Gallery</a></li>
                         <li><a href="partners.html">Our partners</a></li>
                         <li><a href="aboutus.html">About Us</a></li>
                         <li><a href="#">Guidelines</a></li>
