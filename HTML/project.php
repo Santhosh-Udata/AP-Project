@@ -70,7 +70,7 @@
 
     <div class="menu-page">
         <div class="menu-container">
-            <div class="menu"><a href="chest.html"><img src="images/chest.png"></a>
+            <div class="menu"><a href="layout.php?page=chest"><img src="images/chest.png"></a>
                 <p class="menu-title">CHEST</p>
             </div>
             <div class="menu"><a href="#"><img src="images/back.png"></a>

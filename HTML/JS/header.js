@@ -116,18 +116,44 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// header.js
+
 document.addEventListener('DOMContentLoaded', function () {
-    // Sync URL parameters with sessionStorage
+
     const urlParams = new URLSearchParams(window.location.search);
     const urlUsername = urlParams.get('username');
     if (urlUsername) {
         sessionStorage.setItem('currentUser', urlUsername);
     }
 
+    if (urlParams.has('login_error')) {
+        const errorMsg = urlParams.get('login_error') === '1' 
+            ? 'Invalid username or password.' 
+            : 'Login failed. Please try again.';
+        alert(errorMsg);
+        openLogin();
+    }
+
+    if (urlParams.has('register_error')) {
+        let errorMsg = 'Registration failed. ';
+        switch(urlParams.get('register_error')) {
+            case '1':
+                errorMsg += 'Passwords do not match.';
+                break;
+            case '2':
+                errorMsg += 'Username already exists.';
+                break;
+            default:
+                errorMsg += 'Please try again.';
+        }
+        alert(errorMsg);
+        openRegister();
+    } else if (urlParams.has('register_success')) {
+        alert('Registration successful! Please login.');
+        openLogin();
+    }
+
     const username = sessionStorage.getItem('currentUser');
 
-    // Update all navigation links
     document.querySelectorAll('.nav-link').forEach(link => {
         link.onmouseover = function () {
             link.style.cursor = "pointer";
@@ -141,7 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }
 
-            // For regular links
             window.location.href = username ?
                 `${basePath}?username=${username}` :
                 basePath;
@@ -153,18 +178,16 @@ document.querySelector('#profile-link').onmouseover = function () {
     document.querySelector('#profile-link').style.cursor = "pointer";
 };
 
-// Profile image handler
 function handleProfileClick() {
     const username = sessionStorage.getItem('currentUser');
     if (!username) {
         openLogin();
     } else {
-        window.location.href = `profile.html?username=${username}`;
+        window.location.href = `profile.php?username=${username}`;
     }
 };
 
-// Logout function
 function logout() {
     sessionStorage.removeItem('currentUser');
-    window.location.href = 'login.html';
+    window.location.href = 'profile.php';
 }

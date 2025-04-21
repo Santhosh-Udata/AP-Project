@@ -83,6 +83,7 @@ $item = [
                     durability. Whether you're training or relaxing, this vest keeps you looking sharp and feeling
                     great.</p>
             </div>
+            <button class="back-btn" onclick="window.history.back();">Back page</button>
         </div>
     </div>
 
