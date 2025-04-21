@@ -6,5 +6,19 @@ image=images/store_products/Outfits/62a3aa158d6e24292b401d644aad1ec5.jpg|name=Gr
 image=images/store_products/Outfits/2521c06cd00630187e9d4211bc7ee691.jpg|name=Cotton T-Shirt|price=19.99|discount=15
 image=images/store_products/Outfits/ae49a88ff8129d97c2f12063ef3e7ebc.jpg|name=Cotton T-Shirt|price=19.99|discount=15
 image=images/store_products/Outfits/bc93b2fb491e8d8d236f2828bb3d23d9.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/c3f5daa477a7465b3b72ccb85f7ebba0.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/gym_outfit_ideas_for_men_3.webp|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/Gym-Outfits-For-Men.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/images (1).jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/the-best-men-s-workout-tank-tops-by-nike.avif|name=Cotton T-Shirt|price=19.99|discount=15
+
+
+
+
+
+
+
+
+
 
 

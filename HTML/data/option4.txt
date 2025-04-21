@@ -1,5 +1,15 @@
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton Shirt|price=19.99|discount=15
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
+image=images/store_products/Foot_wear/-1117Wx1400H-466590731-blue-MODEL2.jpg|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/-1117Wx1400H-466590731-grey-MODEL.jpg|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/-original-imagr7vjhvfjzasz.webp|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/6-forforone-40-bruton-blue-orange-original-imah4uq4mefbhh3f.webp|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/661e987aded2eb2d8b525ac9-men-s-running-shoes-air-athletic-tennis.jpg|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/ecdefa0c-f342-4c7b-ab0c-6f1991dc7a701639769320980AfroJackMenWhiteColourblockedSneakers1.jpg|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/images (2).jpg|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/images (3).jpg|name=Gym Shoes|price=59.99|discount=10
+image=images/store_products/Foot_wear/MP000000017522870_437Wx649H_202405170750231.avif|name=Gym Shoes|price=59.99|discount=10
+
+
+
+
+
+

@@ -1,8 +1,20 @@
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/equipment/E-comm_product_images_castiron2.0-05_377e1d47-e915-48db-92a6-335b94e51ad0_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/E-comm_product_images_flash-34_d9ce347a-e208-42f0-977b-57d0d1e0c3b2_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/E-comm_product_images_flash-74_02957c5f-1864-423c-86cb-45e3b342e9d7_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/Grey_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/p1833678.avif|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/Screenshot2021-08-09at5.06.55PM_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/SF_F004_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/SF_F040_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/SF-F007_540x.webp|name=Designer Jeans|price=59.99|discount=20
+image=images/store_products/equipment/treadmill-run100e-foldable-upto-14-kmph-3-incl-smart-low-noise-max-130-kg.avif|name=Designer Jeans|price=59.99|discount=20
+
+
+
+
+
+
+
+
+
+

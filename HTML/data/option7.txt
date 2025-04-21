@@ -1,2 +1,28 @@
-image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
+image=images/store_products/Accesories/ab-mat-for-sit-ups-and-hspu.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/adjustable-handgrip-8-40-kg.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/adjustable-yoga-mat-strap-mottled-grey.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/adult-boxing-open-face-headguard-900-black.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/adult-left-right-knee-ligament-brace-r500-black.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/elbow-support-mid-500-black.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/ergonomic-boxing-gloves-120-black.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/gym-ball-swiss-ball-size-2-65-cm-turquoise.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/gym-duffel-bag-30l-fold-down-black.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/p1573979.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/p1813680.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/self-powered-connected-exercise-bike-eb-520-b.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/weight-training-gloves-500-enhanced-grip-breathable-rip-tab-closure-black.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/yoga-mat-4-mm-thick-172-x-58-cm-foam-blue-lightweight-for-soft-yoga.avif|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Accesories/yoga-mat-6-mm-thick-183-x-61-cm-with-strap-foam-green-for-soft-yoga.avif|name=Cotton T-Shirt|price=19.99|discount=15
+
+
+
+
+
+
+
+
+
+
+
+
+
