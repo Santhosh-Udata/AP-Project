@@ -1,2 +1,10 @@
 image=images/71O4LIW9k1L._AC_UY1100_.jpg|name=Cotton T-Shirt|price=19.99|discount=15
 image=images/6V9A8805_425be3ac-eebc-4adf-80f7-0ad20411bd98.webp|name=Designer Jeans|price=59.99|discount=
+image=images/store_products/Outfits/1_4_639df4df-78f7-4f35-93e6-7e9980102fd4_370x555.webp|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/4d9570b32eb38e1c80496937cf1158ec.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/62a3aa158d6e24292b401d644aad1ec5.jpg|name=Grey Gym-Suit|price=19.99|discount=15
+image=images/store_products/Outfits/2521c06cd00630187e9d4211bc7ee691.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/ae49a88ff8129d97c2f12063ef3e7ebc.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+image=images/store_products/Outfits/bc93b2fb491e8d8d236f2828bb3d23d9.jpg|name=Cotton T-Shirt|price=19.99|discount=15
+
+
