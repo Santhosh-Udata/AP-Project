@@ -1,8 +1,6 @@
 <?php
-
 session_start();
-
-include ("database.php");
+include("database.php");
 
 if (isset($_POST["submit"])) {
     $username = $_POST["username"];
@@ -18,20 +16,19 @@ if (isset($_POST["submit"])) {
             if (password_verify($password, $result['password'])) {
                 $_SESSION["username"] = $username;
                 header("Location: ../project.php?username=" . urlencode($username));
-                exit;
+                exit();
             } else {
-                echo "<script>
-                        alert('Invalid username or password. Please try again.');
-                        window.location.href = '../login.html';
-                      </script>";
-                exit;
+                header("Location: ../project.php?login_error=1");
+                exit();
             }
+        } else {
+            header("Location: ../project.php?login_error=1");
+            exit();
         }
     } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-        exit;
+        header("Location: ../project.php?login_error=2");
+        exit();
     }
 }
-header("Location: ../login.html");
-exit;
+exit();
 ?>

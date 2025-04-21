@@ -1,5 +1,4 @@
 <?php
-
 include("database.php");
 
 if (isset($_POST["submit"])) {
@@ -7,31 +6,29 @@ if (isset($_POST["submit"])) {
     $password = $_POST["password"];
     $confirm_password = $_POST["confirm-password"];
 
-    if ($password === $confirm_password) {
+    if ($password !== $confirm_password) {
+        header("Location: ../project.php?register_error=1");
+        exit();
+    }
 
-        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO login (username, password) VALUES (:username, :password)";
-        try {
-            $stmt = $conn->prepare($sql);
-            $stmt->bindValue(":username", $username);
-            $stmt->bindValue(":password", $hashed_password);
-            $stmt->execute();
-            echo "<script> alert('Registration successful!'); 
-             window.location.href = '../login.html';</script>";
-            exit;
-        } catch (PDOException $e) {
-            echo "Registration Failed: " . $e->getMessage();
-
+    $sql = "INSERT INTO login (username, password) VALUES (:username, :password)";
+    try {
+        $stmt = $conn->prepare($sql);
+        $stmt->bindValue(":username", $username);
+        $stmt->bindValue(":password", $hashed_password);
+        $stmt->execute();
+        header("Location: ../project.php?register_success=1");
+        exit();
+    } catch (PDOException $e) {
+        if ($e->errorInfo[1] == 1062) {
+            header("Location: ../project.php?register_error=2");
+        } else {
+            header("Location: ../project.php?register_error=3");
         }
-
-
-    } else {
-        echo "<script>
-                alert('Passwords do not match. Please try again.');
-                window.location.href = '../register.html';
-              </script>";
-        exit;
+        exit();
     }
 }
+exit();
 ?>
