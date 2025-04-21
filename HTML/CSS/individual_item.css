@@ -20,6 +20,12 @@
 .details {
     flex: 1;
     text-align: left;
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .price-section {
@@ -78,6 +84,16 @@
     border: none;
     cursor: pointer;
     margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.description {
+    font-family: "Anybody", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
 }
 
 .description h3 {
@@ -147,4 +163,16 @@
 #cancel-btn-item {
     background: #ccc;
     color: #333;
+}
+
+.back-btn {
+    margin: 20px;
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.back-btn :hover {
+    cursor: pointer;
 }
