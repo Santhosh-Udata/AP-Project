@@ -54,7 +54,8 @@ foreach ($lines as $line) {
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital@0;1&family=Joti+One&display=swap"
         rel="stylesheet">
 
@@ -106,6 +107,7 @@ foreach ($lines as $line) {
         <?php endforeach; ?>
         <div></div>
     </div>
+
 
     <?php if ($page === 'chest'): ?>
         <!-- Show all chest exercises -->
