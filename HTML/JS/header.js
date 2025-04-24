@@ -41,23 +41,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// header.js
 document.addEventListener('DOMContentLoaded', () => {
     // Inject both modals:
     document.body.insertAdjacentHTML('beforeend', `
         <!-- Login Modal -->
         <div id="login-modal" class="modal-overlay hidden">
         <div class="modal">
-        <div class="login-container">
-        <h1>Login Page</h1>
+        <div style="font-family: Arial, Helvetica, sans-serif;" class="login-container">
+        <h1>Login Page</h1><br>
         <form action="PHP/login.php" method="POST">
                 <label for="username">Username:</label><br>
                 <input type="text" id="username" name="username" required><br><br>
                 <label for="password">Password:</label><br>
                 <input type="password" id="password" name="password" required><br><br>
                 <input type="submit" value="Login" name="submit">
-                </form>
-            <button id="register-switch" class="switch">Don't have an account? Register</button>
+                </form><br>
+            <button id="register-switch" class="switch">Don't have an account? Register</button><br><br>
             <button class="back">Back</button>
         </div>
         </div>
@@ -66,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
       <!-- Register Modal -->
       <div id="register-modal" class="modal-overlay hidden">
         <div class="modal">
-    <div class="register-container">
-    <h1>Register Page</h1>
+    <div style="font-family: Arial, Helvetica, sans-serif;" class="register-container">
+    <h1>Register Page</h1><br>
         <form action="PHP/register.php" method="POST">
             <label for="username">Username:</label><br>
             <input type="text" id="username" name="username" required><br><br>
@@ -76,8 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
             <label for="confirm-password">Confirm Password:</label><br>
             <input type="password" id="confirm-password" name="confirm-password" required><br><br>
             <input type="submit" value="Register" name="submit">
-            </form>
-            <button id="login-switch" class="switch">Already have an account? Login</button>
+            </form><br>
+            <button id="login-switch" class="switch">Already have an account? Login</button><br><br>
         <button class="back">Back</button>
         </div>
         </div>
