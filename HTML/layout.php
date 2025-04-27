@@ -128,6 +128,14 @@ foreach ($lines as $line) {
 
         <script>
             document.querySelectorAll('.chest-exercise').forEach(box => {
+                
+                box.addEventListener('mouseover', function () {
+                    box.style.cursor = "pointer";
+                });
+
+                box.addEventListener('mouseout', function () {
+                    box.style.cursor = "default";
+                });
                 box.addEventListener('click', function () {
                     window.location.href = "layout.php?exercise=" + this.id+ "&page=<?= $page ?>";
                 });

@@ -1,12 +1,15 @@
 # ─────── LIST OF EXERCISES ───────
-bench-press|Bench Press|images/bench-press-v1.jpg|midchest|8-12/set
+bench-press|Bench Press|images/Exercises/chest/76678740-acae-475e-82ff-c887f415bf04.png|midchest|8-12/set
 cable-pec-fly|Cable Pec Fly|images/cable-pec-fly.webp|midchest|8-12/set
-incline-dumbbell-press|Incline DB Press|images/incline-db.jpg|upperchest|8-10/set
-decline-bench-press|Decline Press|images/decline.jpg|lowerchest|8-12/set
+incline-dumbbell-press|Incline DB Press|images\Exercises\chest\11571-Incline_vs_Flat_Bench_Wha_Best_for_Your_Chest-_732x549-thumbnail-732x549.avif|upperchest|8-10/set
+decline-dumbbell-press|Decline Dumbell Press|images/Exercises/chest/Decline-Dumbbell-Bench-Press-Start-1024x615.jpg|lowerchest|8-12/set
+chest-dips|Chest Dips|images/Exercises/chest/chest-dip.webp|lowerchest|8-12/set
+incline-bench-press|Incline Bench Press|images/Exercises/chest/bench-press-v1.jpg|upperchest|8-12/set
+push-ups|Push Ups|images/Exercises/chest/push-up-exercises.webp|midchest|8-12/set
 
 # ─────── DETAILS FOR bench-press ───────
 bench-press|Title|Bench Press
-bench-press|Image|images/bench-press-v1.jpg
+bench-press|Image|images/Exercises/chest/76678740-acae-475e-82ff-c887f415bf04.png
 bench-press|Type|Compound Exercise
 bench-press|Movement|Horizontal Push
 bench-press|Equipment|Barbell, Flat Bench
@@ -33,3 +36,77 @@ cable-pec-fly|Reps For Endurance|2‑3 sets of 12‑15 reps
 cable-pec-fly|Benefit|Deep stretch of the chest
 cable-pec-fly|Benefit|Constant tension throughout movement
 cable-pec-fly|Benefit|Improves muscle definition
+
+# ─────── DETAILS FOR incline-dumbbell-press ───────
+incline-dumbbell-press|Title|Incline DB Press
+incline-dumbbell-press|Image|images\Exercises\chest\11571-Incline_vs_Flat_Bench_Wha_Best_for_Your_Chest-_732x549-thumbnail-732x549.avif
+incline-dumbbell-press|Type|Compound Exercise
+incline-dumbbell-press|Movement|Inclined Horizontal Push
+incline-dumbbell-press|Equipment|Barbell, Inclined Bench
+incline-dumbbell-press|Primary Target|Upper Pectoralis Major (Upper Chest)
+incline-dumbbell-press|Secondary Target|Anterior Deltoids, Triceps
+incline-dumbbell-press|Reps For Growth|3‑4 sets of 8‑12 reps
+incline-dumbbell-press|Reps For Strength|4‑6 sets of 3‑6 reps
+incline-dumbbell-press|Reps For Endurance|2‑3 sets of 12‑20 reps
+incline-dumbbell-press|Benefit|Emphasizes upper chest development
+incline-dumbbell-press|Benefit|Supports a balanced chest aesthetic
+incline-dumbbell-press|Benefit|Engages shoulders more than flat bench
+
+# ─────── DETAILS FOR decline-dumbbell-press ───────
+decline-dumbbell-press|Title|Decline DB Press
+decline-dumbbell-press|Image|images/Exercises/chest/Decline-Dumbbell-Bench-Press-Start-1024x615.jpg
+decline-dumbbell-press|Type|Compound Exercise
+decline-dumbbell-press|Movement|Declined Horizontal Push
+decline-dumbbell-press|Equipment|Barbell, Decline Bench
+decline-dumbbell-press|Primary Target|Lower Pectoralis Major (Lower Chest)
+decline-dumbbell-press|Secondary Target|Triceps, Anterior Deltoids
+decline-dumbbell-press|Reps For Growth|3‑4 sets of 8‑12 reps
+decline-dumbbell-press|Reps For Strength|4‑6 sets of 3‑6 reps
+decline-dumbbell-press|Reps For Endurance|2‑3 sets of 12‑20 reps
+decline-dumbbell-press|Benefit|Focuses on lower chest development
+decline-dumbbell-press|Benefit|Reduces shoulder strain compared to flat or incline presses
+
+# ─────── DETAILS FOR chest-dips ───────
+chest-dips|Title|Chest Dips
+chest-dips|Image|images\Exercises\chest\chest-dip.webp
+chest-dips|Type|Compound Bodyweight Exercise
+chest-dips|Movement|Vertical Push (Chest Focus)
+chest-dips|Equipment|Dip Bars or Parallel Bars
+chest-dips|Primary Target|Lower Pectoralis Major (Lower Chest)
+chest-dips|Secondary Target|Triceps, Front Shoulders
+chest-dips|Reps For Growth|3‑4 sets of 8‑12 reps
+chest-dips|Reps For Strength|4‑6 sets of 6‑10 reps
+chest-dips|Reps For Endurance|2‑3 sets of 15‑20 reps
+chest-dips|Benefit|Great for lower chest size and strength
+chest-dips|Benefit|Increases triceps and shoulder engagement
+chest-dips|Benefit|Can be weighted for progression
+
+# ─────── DETAILS FOR incline-bench-press ───────
+incline-bench-press|Title|Incline Bench Press
+incline-bench-press|Image|images/Exercises/chest/bench-press-v1.jpg
+incline-bench-press|Type|Compound Exercise
+incline-bench-press|Movement|Inclined Horizontal Push
+incline-bench-press|Equipment|Barbell, Inclined Bench
+incline-bench-press|Primary Target|Upper Pectoralis Major (Upper Chest)
+incline-bench-press|Secondary Target|Anterior Deltoids, Triceps
+incline-bench-press|Reps For Growth|3‑4 sets of 8‑12 reps
+incline-bench-press|Reps For Strength|4‑6 sets of 3‑6 reps
+incline-bench-press|Reps For Endurance|2‑3 sets of 12‑20 reps
+incline-bench-press|Benefit|Emphasizes upper chest development
+incline-bench-press|Benefit|Supports a balanced chest aesthetic
+incline-bench-press|Benefit|Engages shoulders more than flat bench
+
+# ─────── DETAILS FOR push-ups ───────
+push-ups|Title|Push Ups
+push-ups|Image|images\Exercises\chest\push-up-exercises.webp
+push-ups|Type|Bodyweight Compound Exercise
+push-ups|Movement|Horizontal Push
+push-ups|Equipment|No Equipment Needed
+push-ups|Primary Target|Pectoralis Major (Mid Chest)
+push-ups|Secondary Target|Triceps, Anterior Deltoids ,core
+push-ups|Reps For Growth|3‑4 sets of 8‑12 reps
+push-ups|Reps For Strength|4‑6 sets of 6‑10 reps
+push-ups|Reps For Endurance|2‑3 sets of 15‑failure reps
+push-ups|Benefit|Requires no equipment
+push-ups|Benefit|Scalable to any fitness level
+push-ups|Benefit|Improves core stability and joint control

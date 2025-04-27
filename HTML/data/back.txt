@@ -1,35 +1,113 @@
 # ─────── LIST OF EXERCISES ───────
-bench-press|Bench Press|images/bench-press-v1.jpg|midchest|8-12/set
-cable-pec-fly|Cable Pec Fly|images/cable-pec-fly.webp|midchest|8-12/set
-incline-dumbbell-press|Incline DB Press|images/incline-db.jpg|upperchest|8-10/set
-decline-bench-press|Decline Press|images/decline.jpg|lowerchest|8-12/set
+bent-overrow|Bent Over Row|images\Exercises\back\bent-over-row.jpg|lowerback|8-12/set
+dumbell-row|Dumbell Row|images\Exercises\back\dumbell-row.jpg|middleback|8-12/set
+front-plate-raise|Front Plate Raise|images\Exercises\back\front-plate-raise.jpg|lowerback|8-10/set
+lat-pulldown|Lat pulldown|images\Exercises\back\lat-pulldown.jpg|upperback|8-12/set
+pull-up|Pull Up|images\Exercises\back\Pull-Up_Exercise_25368f11-3787-483b-a013-523c8549dd9e.jpg|upperback|8-12/set
+seated-cable-row|Seated Cable Row|images\Exercises\back\seated-cable-row.webp|middleback|8-12/set
+t-bar-row|T-Bar Row|images\Exercises\back\t-bar-row.jpg|middleback|8-12/set
 
-# ─────── DETAILS FOR bench-press ───────
-bench-press|Title|Bench Press
-bench-press|Image|images/bench-press-v1.jpg
-bench-press|Type|Compound Exercise
-bench-press|Movement|Horizontal Push
-bench-press|Equipment|Barbell, Flat Bench
-bench-press|Primary Target|Pectoralis Major (Mid Chest)
-bench-press|Secondary Target|Triceps, Anterior Deltoids (Front Shoulders)
-bench-press|Reps For Growth|3‑4 sets of 8‑12 reps
-bench-press|Reps For Strength|4‑6 sets of 3‑6 reps
-bench-press|Reps For Endurance|2‑3 sets of 12‑20 reps
-bench-press|Benefit|Builds upper body strength
-bench-press|Benefit|Enhances chest muscle size and definition
-bench-press|Benefit|Engages multiple muscle groups for efficient training
+# ─────── DETAILS FOR bent-overrow ───────
+bent-overrow|Title|Bent Over Row
+bent-overrow|Image|images\Exercises\back\bent-over-row.jpg
+bent-overrow|Type|Compound Exercise
+bent-overrow|Movement|Horizontal Pull
+bent-overrow|Equipment|Barbell
+bent-overrow|Primary Target|Lats, Rhomboids, Trapezius
+bent-overrow|Secondary Target|Biceps, Rear Delts
+bent-overrow|Reps For Growth|3‑4 sets of 8‑12 reps
+bent-overrow|Reps For Strength|4‑6 sets of 3‑6 reps
+bent-overrow|Reps For Endurance|2‑3 sets of 12‑15 reps
+bent-overrow|Benefit|Adds mass and density to the upper/middle back
+bent-overrow|Benefit|Strengthens rear delts and arms
+bent-overrow|Benefit|Supports posture improvement
 
-# ─────── DETAILS FOR cable-pec-fly ───────
-cable-pec-fly|Title|Cable Pec Fly
-cable-pec-fly|Image|images/cable-pec-fly.webp
-cable-pec-fly|Type|Isolation Exercise
-cable-pec-fly|Movement|Horizontal Adduction
-cable-pec-fly|Equipment|Cable Machine
-cable-pec-fly|Primary Target|Pectoralis Major
-cable-pec-fly|Secondary Target|Anterior Deltoids
-cable-pec-fly|Reps For Growth|3‑4 sets of 8‑12 reps
-cable-pec-fly|Reps For Strength|4‑5 sets of 6‑8 reps
-cable-pec-fly|Reps For Endurance|2‑3 sets of 12‑15 reps
-cable-pec-fly|Benefit|Deep stretch of the chest
-cable-pec-fly|Benefit|Constant tension throughout movement
-cable-pec-fly|Benefit|Improves muscle definition
+# ─────── DETAILS FOR dumbell-row ───────
+dumbell-row|Title|Dumbell Row
+dumbell-row|Image|images\Exercises\back\dumbell-row.jpg
+dumbell-row|Type|Compound Unilateral Exercise
+dumbell-row|Movement|Horizontal pull
+dumbell-row|Equipment|Dumbbell, Flat Bench
+dumbell-row|Primary Target|Lats, Rhomboids
+dumbell-row|Secondary Target|Lats, Rhomboids
+dumbell-row|Reps For Growth|3‑4 sets of 8‑12 reps
+dumbell-row|Reps For Strength|4‑5 sets of 6‑8 reps
+dumbell-row|Reps For Endurance|2‑3 sets of 12‑15 reps
+dumbell-row|Benefit|Improves muscle symmetry
+dumbell-row|Benefit|Isolates and develops the back
+dumbell-row|Benefit|Low risk of lower back injury
+
+# ─────── DETAILS FOR front-plate-raise ───────
+front-plate-raise|Title|Front Plate Raise
+front-plate-raise|Image|images\Exercises\back\front-plate-raise.jpg
+front-plate-raise|Type|Compound Unilateral Exercise
+front-plate-raise|Movement|Horizontal pull
+front-plate-raise|Equipment|Dumbbell, Flat Bench
+front-plate-raise|Primary Target|Lats, Rhomboids
+front-plate-raise|Secondary Target|Lats, Rhomboids
+front-plate-raise|Reps For Growth|3‑4 sets of 8‑12 reps
+front-plate-raise|Reps For Strength|4‑5 sets of 6‑8 reps
+front-plate-raise|Reps For Endurance|2‑3 sets of 12‑15 reps
+front-plate-raise|Benefit|Improves muscle symmetry
+front-plate-raise|Benefit|Isolates and develops the back
+front-plate-raise|Benefit|Low risk of lower back injury
+
+# ─────── DETAILS FOR pull-up ───────
+lat-pulldown|Title|Lat Pulldown
+lat-pulldown|Image|images\Exercises\back\lat-pulldown.jpg
+lat-pulldown|Type|Machine Compound Exercise
+lat-pulldown|Movement|vertital pull
+lat-pulldown|Equipment|Lat Pulldown Machine
+lat-pulldown|Primary Target|Latissimus Dorsi
+lat-pulldown|Secondary Target|Biceps, Rear Delts
+lat-pulldown|Reps For Growth|3‑4 sets of 8‑12 reps
+lat-pulldown|Reps For Strength|4‑5 sets of 6‑8 reps
+lat-pulldown|Reps For Endurance|2‑3 sets of 15‑18 reps
+lat-pulldown|Benefit|Builds width in the upper back
+lat-pulldown|Benefit|Accessible to all skill levels
+lat-pulldown|Benefit|Allows gradual weight progression
+
+# ─────── DETAILS FOR pull-up ───────
+pull-Up|Title|Pull Up
+pull-Up|Image|images\Exercises\back\Pull-Up_Exercise_25368f11-3787-483b-a013-523c8549dd9e.jpg
+pull-Up|Type|Bodyweight Compound Exercise
+pull-Up|Movement|vertital pull
+pull-Up|Equipment|pull up bar
+pull-Up|Primary Target|Latissimus Dorsi (Lats)
+pull-Up|Secondary Target|Biceps, Rhomboids, Traps
+pull-Up|Reps For Growth|3‑4 sets of 8‑12 reps
+pull-Up|Reps For Strength|4‑5 sets of 6‑8 reps
+pull-Up|Reps For Endurance|2‑3 sets of 10‑15 reps
+pull-Up|Benefit|Improves upper-body pulling strength
+pull-Up|Benefit|Builds wide, V-shaped back
+pull-Up|Benefit|Great for calisthenics routines
+
+# ─────── DETAILS FOR seated-cable-row ───────
+seated-cable-row|Title|Seated Cable Row
+seated-cable-row|Image|images\Exercises\back\seated-cable-row.webp
+seated-cable-row|Type|Compound Macine Exercise
+seated-cable-row|Movement|Horizontal pull
+seated-cable-row|Equipment|cable Machine
+seated-cable-row|Primary Target|Rhomboids, Lats, Trapezius
+seated-cable-row|Secondary Target|Biceps, Rear Delts
+seated-cable-row|Reps For Growth|3‑4 sets of 8‑12 reps
+seated-cable-row|Reps For Strength|4‑5 sets of 6‑8 reps
+seated-cable-row|Reps For Endurance|2‑3 sets of 10‑15 reps
+seated-cable-row|Benefit|Targets mid-back and scapular control
+seated-cable-row|Benefit|Allows steady form and tempo
+seated-cable-row|Benefit|Easy to modify with grip attachments
+
+# ─────── DETAILS FOR t-bar-row ───────
+t-bar-row|Title|T-Bar Row
+t-bar-row|Image|images\Exercises\back\t-bar-row.jpg
+t-bar-row|Type|Compound Exercise
+t-bar-row|Movement|Horizontal pull
+t-bar-row|Equipment|T-Bar Machine or Barbell + Landmine Attachment
+t-bar-row|Primary Target|Mid Back (Rhomboids, Lats, Traps)
+t-bar-row|Secondary Target|Biceps, Lower Back (Stabilizer)
+t-bar-row|Reps For Growth|3‑4 sets of 8‑12 reps
+t-bar-row|Reps For Strength|4‑5 sets of 6‑8 reps
+t-bar-row|Reps For Endurance|2‑3 sets of 10‑15 reps
+t-bar-row|Benefit|Adds volume to the middle back
+t-bar-row|Benefit|Safe and stable row movement
+t-bar-row|Benefit|Ideal for intermediate lifters
