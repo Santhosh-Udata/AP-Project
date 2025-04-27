@@ -1,0 +1,35 @@
+# ─────── LIST OF EXERCISES ───────
+bench-press|Bench Press|images/bench-press-v1.jpg|midchest|8-12/set
+cable-pec-fly|Cable Pec Fly|images/cable-pec-fly.webp|midchest|8-12/set
+incline-dumbbell-press|Incline DB Press|images/incline-db.jpg|upperchest|8-10/set
+decline-bench-press|Decline Press|images/decline.jpg|lowerchest|8-12/set
+
+# ─────── DETAILS FOR bench-press ───────
+bench-press|Title|Bench Press
+bench-press|Image|images/bench-press-v1.jpg
+bench-press|Type|Compound Exercise
+bench-press|Movement|Horizontal Push
+bench-press|Equipment|Barbell, Flat Bench
+bench-press|Primary Target|Pectoralis Major (Mid Chest)
+bench-press|Secondary Target|Triceps, Anterior Deltoids (Front Shoulders)
+bench-press|Reps For Growth|3‑4 sets of 8‑12 reps
+bench-press|Reps For Strength|4‑6 sets of 3‑6 reps
+bench-press|Reps For Endurance|2‑3 sets of 12‑20 reps
+bench-press|Benefit|Builds upper body strength
+bench-press|Benefit|Enhances chest muscle size and definition
+bench-press|Benefit|Engages multiple muscle groups for efficient training
+
+# ─────── DETAILS FOR cable-pec-fly ───────
+cable-pec-fly|Title|Cable Pec Fly
+cable-pec-fly|Image|images/cable-pec-fly.webp
+cable-pec-fly|Type|Isolation Exercise
+cable-pec-fly|Movement|Horizontal Adduction
+cable-pec-fly|Equipment|Cable Machine
+cable-pec-fly|Primary Target|Pectoralis Major
+cable-pec-fly|Secondary Target|Anterior Deltoids
+cable-pec-fly|Reps For Growth|3‑4 sets of 8‑12 reps
+cable-pec-fly|Reps For Strength|4‑5 sets of 6‑8 reps
+cable-pec-fly|Reps For Endurance|2‑3 sets of 12‑15 reps
+cable-pec-fly|Benefit|Deep stretch of the chest
+cable-pec-fly|Benefit|Constant tension throughout movement
+cable-pec-fly|Benefit|Improves muscle definition

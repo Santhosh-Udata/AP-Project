@@ -73,22 +73,22 @@
             <div class="menu"><a href="layout.php?page=chest"><img src="images/chest.png"></a>
                 <p class="menu-title">CHEST</p>
             </div>
-            <div class="menu"><a href="#"><img src="images/back.png"></a>
+            <div class="menu"><a href="layout.php?page=back"><img src="images/back.png"></a>
                 <p class="menu-title">BACK</p>
             </div>
-            <div class="menu"><a href="#"><img src="images/biceps.png"></a>
+            <div class="menu"><a href="layout.php?page=biceps"><img src="images/biceps.png"></a>
                 <p class="menu-title">BICEPS</p>
             </div>
         </div>
         <br><br><br>
         <div class="menu-container">
-            <div class="menu"><a href="#"><img src="images/shoulder.png"></a>
+            <div class="menu"><a href="layout.php?page=shoulder"><img src="images/shoulder.png"></a>
                 <p class="menu-title">SHOULDER</p>
             </div>
-            <div class="menu"><a href="#"><img src="images/legs.png"></a>
+            <div class="menu"><a href="layout.php?page=legs"><img src="images/legs.png"></a>
                 <p class="menu-title">LEGS</p>
             </div>
-            <div class="menu"><a href="#"><img src="images/triceps.png"></a>
+            <div class="menu"><a href="layout.php?page=triceps"><img src="images/triceps.png"></a>
                 <p class="menu-title">TRICEPS</p>
             </div>
         </div>
