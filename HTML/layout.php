@@ -1,8 +1,20 @@
 <?php
 
+// key => label
+$sections = [
+    'chest' => 'Chest',
+    'back' => 'Back',
+    'biceps' => 'Biceps',
+    'shoulders' => 'Shoulders',
+    'legs' => 'Legs',
+    'triceps' => 'Triceps',
+];
+
 $page = isset($_GET['page']) ? $_GET['page'] : null;
 
-$lines = file("data/chest.txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+$selectedExercise = $_GET['exercise'] ?? null;
+
+$lines = file("data/" . $page . ".txt", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
 $allExercises = [];
 $exerciseDetail = [];
@@ -90,17 +102,7 @@ foreach ($lines as $line) {
 
     <div class="main-menu">
         <div></div>
-        <?php
-        // key => label
-        $sections = [
-            'chest' => 'Chest',
-            'back' => 'Back',
-            'biceps' => 'Biceps',
-            'shoulders' => 'Shoulders',
-            'legs' => 'Legs',
-            'triceps' => 'Triceps',
-        ];
-        foreach ($sections as $key => $label): ?>
+        <?php foreach ($sections as $key => $label): ?>
             <div class="<?= $key ?> main-list">
                 <a href="layout.php?page=<?= urlencode($key) ?>"><?= htmlspecialchars($label) ?></a>
             </div>
@@ -109,7 +111,7 @@ foreach ($lines as $line) {
     </div>
 
 
-    <?php if ($page === 'chest'): ?>
+    <?php if (array_key_exists($page, $sections) && !$selectedExercise): ?>
         <!-- Show all chest exercises -->
         <div class="chest-exercises">
             <?php foreach ($allExercises as $id => $item): ?>
@@ -127,36 +129,47 @@ foreach ($lines as $line) {
         <script>
             document.querySelectorAll('.chest-exercise').forEach(box => {
                 box.addEventListener('click', function () {
-                    window.location.href = "layout.php?page=" + this.id;
+                    window.location.href = "layout.php?exercise=" + this.id+ "&page=<?= $page ?>";
                 });
             });
         </script>
 
-    <?php else: ?>
+    <?php elseif ($selectedExercise): ?>
+
+        <?php $lines = file('data/'.$page.'.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+
+        $details = [];
+        foreach ($lines as $line) {
+            if (strpos($line, $selectedExercise . '|') === 0) {
+                list($id, $key, $value) = explode('|', $line, 3);
+                $details[$key][] = $value; // some keys like 'Benefit' appear multiple times
+            }
+        } ?>
+
         <div class="container">
             <div class="left-section">
 
                 <h1 class="title">
-                    <?= $exerciseDetail['Title'][0] ?? '' ?>
+                    <?= $details['Title'][0] ?? '' ?>
                 </h1>
                 <div class="image-container">
-                    <img src="<?= $exerciseDetail['Image'][0] ?? '' ?>" alt="" width="300">
+                    <img src="<?= $details['Image'][0] ?? '' ?>" alt="" width="300">
                 </div>
 
                 <div class="bottom-box">
                     <div class="detail">
                         <p><span class="bullet"><img src="images/bullet.png"></span><u>Type:</u>
-                            <?= $exerciseDetail['Type'][0] ?? '' ?>
+                            <?= $details['Type'][0] ?? '' ?>
                         </p>
                     </div>
                     <div class="detail">
                         <p><span class="bullet"><img src="images/bullet.png"></span><u>Movement:</u>
-                            <?= $exerciseDetail['Movement'][0] ?? '' ?>
+                            <?= $details['Movement'][0] ?? '' ?>
                         </p>
                     </div>
                     <div class="detail">
                         <p><span class="bullet"><img src="images/bullet.png"></span><u>Equipment:</u>
-                            <?= $exerciseDetail['Equipment'][0] ?? '' ?>
+                            <?= $details['Equipment'][0] ?? '' ?>
                         </p>
                     </div>
                 </div>
@@ -167,10 +180,10 @@ foreach ($lines as $line) {
                 <div class="panel">
                     <h3>Target Muscle Group</h3>
                     <p><strong>Primary:</strong>
-                        <?= $exerciseDetail['Primary Target'][0] ?? '' ?>
+                        <?= $details['Primary Target'][0] ?? '' ?>
                     </p>
                     <p><strong>Secondary:</strong>
-                        <?= $exerciseDetail['Secondary Target'][0] ?? '' ?>
+                        <?= $details['Secondary Target'][0] ?? '' ?>
                     </p>
                 </div>
 
@@ -178,13 +191,13 @@ foreach ($lines as $line) {
                     <h3>Recommended Reps &amp; Sets</h3>
                     <ul>
                         <li>For Muscle Growth:
-                            <?= $exerciseDetail['Reps For Growth'][0] ?? '' ?>
+                            <?= $details['Reps For Growth'][0] ?? '' ?>
                         </li>
                         <li>For Strength:
-                            <?= $exerciseDetail['Reps For Strength'][0] ?? '' ?>
+                            <?= $details['Reps For Strength'][0] ?? '' ?>
                         </li>
                         <li>For
-                            <?= $exerciseDetail['Reps For Endurance'][0] ?? '' ?>
+                            <?= $details['Reps For Endurance'][0] ?? '' ?>
                         </li>
                     </ul>
                 </div>
@@ -192,7 +205,7 @@ foreach ($lines as $line) {
                 <div class="panel">
                     <h3>Key Benefits</h3>
                     <ul>
-                        <?php foreach ($exerciseDetail['Benefit'] ?? [] as $b): ?>
+                        <?php foreach ($details['Benefit'] ?? [] as $b): ?>
                             <li>
                                 <?= $b ?>
                             </li>
