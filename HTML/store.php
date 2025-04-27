@@ -33,7 +33,48 @@ $option = [
 ];
 ?>
 
+<?php
+session_start();
+if (isset($_GET['username'])) {
+    $_SESSION['currentUser'] = trim($_GET['username']);
+}
+$isAdmin = (
+    isset($_SESSION['currentUser'])
+    && strtolower($_SESSION['currentUser']) === 'admin'
+);
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && $isAdmin) {
+    $lines = [];
+    $uploadDir = __DIR__ . '/images/';
+
+    foreach ($_POST['name'] as $i => $name) {
+        // Determine final image path
+        if (!empty($_FILES['image_file']['tmp_name'][$i])) {
+            $tmp = $_FILES['image_file']['tmp_name'][$i];
+            $ext = pathinfo($_FILES['image_file']['name'][$i], PATHINFO_EXTENSION);
+            $newName = uniqid('img_') . '.' . $ext;
+            move_uploaded_file($tmp, $uploadDir . $newName);
+            $imgPath = "images/$newName";
+        } else {
+            $imgPath = $_POST['existing_image'][$i];
+        }
+
+        // Sanitize
+        $n = str_replace(['|', '='], '', trim($name));
+        $p = floatval($_POST['price'][$i]);
+        $d = intval($_POST['discount'][$i]);
+
+        $lines[] = "image={$imgPath}|name={$n}|price={$p}|discount={$d}";
+    }
+
+    // Write back to data file
+    file_put_contents("data/option{$selected_option}.txt", implode("\n", $lines));
+    // Redirect out of edit mode
+    header("Location: store.php?option={$selected_option}&username=admin");
+    exit;
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -88,6 +129,7 @@ $option = [
     </div>
 
     <div class="Store">
+
         <div class="side-bar">
             <?php for ($i = 1; $i <= 8; $i++): ?>
                 <button class="sidebar-btn <?= $i === $selected_option ? 'active' : '' ?>" data-option="<?= $i ?>">
@@ -96,26 +138,66 @@ $option = [
             <?php endfor; ?>
         </div>
 
-        <div class="items-grid">
-            <?php foreach (get_store_items($selected_option) as $item): ?>
-                <div class="item-cell"
-                    onclick="window.location='individual_item.php?<?= http_build_query($item) ?>&option=<?= $selected_option ?>'">
-                    <div class="item">
-                        <img src="<?= htmlspecialchars($item['image']) ?>" class="item_img">
+        <?php if (isset($_GET['edit']) && $isAdmin): ?>
+            <form id="store-editor" method="post" enctype="multipart/form-data"
+                action="store.php?option=<?= $selected_option ?>&username=admin">
+                <div class="items-edit">
+                    <h3>Items in “<?= $option[$selected_option] ?>”</h3>
+                    <div id="items-list">
+                        <?php foreach (get_store_items($selected_option) as $i => $item): ?>
+                            <div class="item-row">
+                                <!-- Existing image preview & file input -->
+                                <img src="<?= htmlspecialchars($item['image']) ?>" width="60"><br>
+                                <input type="file" name="image_file[<?= $i ?>]">
+                                <input type="hidden" name="existing_image[<?= $i ?>]"
+                                    value="<?= htmlspecialchars($item['image']) ?>">
+
+                                <!-- Text inputs for name, price, discount -->
+                                <input type="text" name="name[<?= $i ?>]" value="<?= htmlspecialchars($item['name']) ?>">
+                                <input type="text" name="price[<?= $i ?>]" value="<?= htmlspecialchars($item['price']) ?>">
+                                <input type="text" name="discount[<?= $i ?>]"
+                                    value="<?= htmlspecialchars($item['discount']) ?>">
+                            </div>
+                        <?php endforeach; ?>
                     </div>
-                    <div class="item_info">
-                        <div class="item_name"><?= htmlspecialchars($item['name']) ?></div>
-                        <div class="price_and_discount">
-                            <div class="price">$<?= number_format($item['price'], 2) ?></div>
-                            <?php if (!empty($item['discount'])): ?>
-                                <div class="discount"><?= $item['discount'] ?>% off</div>
-                            <?php endif; ?>
+                    <button type="button" id="add-item">+ Add Item</button>
+                </div>
+
+                <button type="submit" id="save-changes">Save Changes</button>
+            </form>
+        <?php else: ?>
+            <!-- Your existing non-edit output here -->
+            <div class="items-grid">
+                <?php foreach (get_store_items($selected_option) as $item): ?>
+                    <div class="item-cell"
+                        onclick="window.location='individual_item.php?<?= http_build_query($item) ?>&option=<?= $selected_option ?>'">
+                        <div class="item">
+                            <img src="<?= htmlspecialchars($item['image']) ?>" class="item_img">
+                        </div>
+                        <div class="item_info">
+                            <div class="item_name"><?= htmlspecialchars($item['name']) ?></div>
+                            <div class="price_and_discount">
+                                <div class="price">$<?= number_format($item['price'], 2) ?></div>
+                                <?php if (!empty($item['discount'])): ?>
+                                    <div class="discount"><?= $item['discount'] ?>% off</div>
+                                <?php endif; ?>
+                            </div>
                         </div>
                     </div>
-                </div>
-            <?php endforeach; ?>
-        </div>
+                <?php endforeach; ?>
+            </div>
+
+
+
+        <?php endif; ?>
+
+
     </div>
+    <?php if ($isAdmin): ?>
+        <div class="EDIT">
+            <button id="toggle-edit">EDIT STORE</button>
+        </div>
+    <?php endif; ?>
 
 
     <footer class="footer">
