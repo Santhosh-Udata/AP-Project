@@ -9,8 +9,8 @@ if (!isset($_GET['image']) || !isset($_GET['name'])) {
 $item = [
     'image' => htmlspecialchars($_GET['image']),
     'name' => htmlspecialchars($_GET['name']),
-    'basePrice' => 7.99,       // price before discount
-    'discount' => 60,         // percent off
+    'basePrice' => $_GET['price'],       // price before discount
+    'discount' => $_GET['discount']?? 0 ,         // percent off
 ];
 ?>
 <!DOCTYPE html>
