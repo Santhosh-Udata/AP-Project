@@ -11,4 +11,3 @@ image=images/store_products/Outfits/gym_outfit_ideas_for_men_3.webp|name=Cotton 
 image=images/store_products/Outfits/Gym-Outfits-For-Men.jpg|name=Cotton T-Shirt|price=19.99|discount=15
 image=images/store_products/Outfits/images (1).jpg|name=Cotton T-Shirt|price=19.99|discount=15
 image=images/store_products/Outfits/the-best-men-s-workout-tank-tops-by-nike.avif|name=Cotton T-Shirt|price=19.99|discount=15
-image=images/img_680e6be5301eb.png|name=Genshin Impact|price=499.99|discount=20
