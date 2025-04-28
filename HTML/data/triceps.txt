@@ -1,0 +1,81 @@
+# ─────── LIST OF EXERCISES ───────
+lateral-raises|Lateral Raises|images\Exercises\Shoulders\lateral-raises.webp|lowershoulders|8-12/set
+Arnold-press|Arnold Press|images/Exercises/Shoulders/arnold-press.jpg|lowershoulders|8-10/set
+upright-row|Upright Row|images\Exercises\Shoulders\try-these-upright-row-variations-experts-say.avif|uppershoulders|8-12/set
+dumbell-shoulder-press|Dumbell Shoulder press|images\Exercises\Shoulders\dumbell-shoulder-press.avif|uppershoulders|8-12/set
+rear-dealt-fly|Rear Dealt fly|images\Exercises\Shoulders\rear-delt-fly.jpg|lowershoulders|8-12/set
+
+# ─────── DETAILS FOR Arnold-press ───────
+Arnold-press|Title|Arnold Press
+Arnold-press|Image|images/Exercises/Shoulders/arnold-press.jpg
+Arnold-press|Type|Isolation Exercise
+Arnold-press|Movement|Press
+Arnold-press|Equipment|Dumbbells
+Arnold-press|Primary Target|Shoulders
+Arnold-press|Secondary Target|Triceps, Upper Chest
+Arnold-press|Reps For Growth|3‑4 sets of 8‑12 reps
+Arnold-press|Reps For Strength|4‑6 sets of 3‑6 reps
+Arnold-press|Reps For Endurance|2‑3 sets of 12‑20 reps
+Arnold-press|Benefit|Isolates shoulder muscles effectively
+Arnold-press|Benefit|Improves shoulder stability
+Arnold-press|Benefit|Enhances shoulder mobility
+
+# ─────── DETAILS FOR dumbell-shoulder-press ───────
+dumbell-shoulder-press|Title|Dumbell Shoulder Press
+dumbell-shoulder-press|Image|images\Exercises\Shoulders\dumbell-shoulder-press.avif
+dumbell-shoulder-press|Type|Isolation Exercise
+dumbell-shoulder-press|Movement|Press
+dumbell-shoulder-press|Equipment|Dumbbells
+dumbell-shoulder-press|Primary Target|Shoulders
+dumbell-shoulder-press|Secondary Target|Triceps, Upper Chest
+dumbell-shoulder-press|Reps For Growth|3‑4 sets of 8‑12 reps
+dumbell-shoulder-press|Reps For Strength|4‑5 sets of 6‑8 reps
+dumbell-shoulder-press|Reps For Endurance|2‑3 sets of 12‑15 reps
+dumbell-shoulder-press|Benefit|Isolates shoulder muscles effectively
+dumbell-shoulder-press|Benefit|Reduces shoulder strain
+dumbell-shoulder-press|Benefit|Improves muscle activation
+
+# ─────── DETAILS FOR lateral-raises ───────
+lateral-raises|Title|Lateral Raises
+lateral-raises|Image|images\Exercises\Shoulders\lateral-raises.webp
+lateral-raises|Type|Isolation Exercise
+lateral-raises|Movement|Lateral Raise
+lateral-raises|Equipment|Dumbbells
+lateral-raises|Primary Target|Shoulders
+lateral-raises|Secondary Target|Trapezius, Upper Back
+lateral-raises|Reps For Growth|3‑4 sets of 8‑12 reps
+lateral-raises|Reps For Strength|4‑5 sets of 6‑8 reps
+lateral-raises|Reps For Endurance|2‑3 sets of 12‑15 reps
+lateral-raises|Benefit|Isolates shoulder muscles effectively
+lateral-raises|Benefit|Improves shoulder stability
+lateral-raises|Benefit|Enhances shoulder mobility
+
+
+# ─────── DETAILS FOR rear-dealt-fly ───────
+rear-dealt-fly|Title|Rear Dealt Fly
+rear-dealt-fly|Image|images\Exercises\Shoulders\rear-delt-fly.jpg
+rear-dealt-fly|Type|Compound Exercise
+rear-dealt-fly|Movement|Squat Pattern
+rear-dealt-fly|Equipment|Barbell, Dumbbells
+rear-dealt-fly|Primary Target|Biceps Brachii
+rear-dealt-fly|Secondary Target|Forearms, Shoulders
+rear-dealt-fly|Reps For Growth|3‑4 sets of 8‑12 reps
+rear-dealt-fly|Reps For Strength|4‑6 sets of 3‑6 reps
+rear-dealt-fly|Reps For Endurance|2‑3 sets of 12‑20 reps
+rear-dealt-fly|Benefit|Full-body strength and hypertrophy
+rear-dealt-fly|Benefit|Improves core stability and posture
+
+# ─────── DETAILS FOR upright-row ───────
+upright-row|Title|Upright Row
+upright-row|Image|images\Exercises\Shoulders\try-these-upright-row-variations-experts-say.avif
+upright-row|Type|Isolation Exercise
+upright-row|Movement|Curl
+upright-row|Equipment|Preacher Curl Bench, Dumbbell
+upright-row|Primary Target|Biceps Brachii
+upright-row|Secondary Target|Forearms, Shoulders
+upright-row|Reps For Growth|3‑4 sets of 8‑12 reps
+upright-row|Reps For Strength|4‑6 sets of 6‑10 reps
+upright-row|Reps For Endurance|2‑3 sets of 15‑20 reps
+upright-row|Benefit|Isolates biceps effectively
+upright-row|Benefit|Reduces shoulder strain
+upright-row|Benefit|Improves mind-muscle connection
