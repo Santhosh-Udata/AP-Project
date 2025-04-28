@@ -1,0 +1,80 @@
+# ─────── LIST OF EXERCISES ───────
+barbell-curl|Barbell Curl|images\Exercises\biceps\barbell-curl.jpg|lowerbiceps|8-10/set
+cable-curl|Cabel Curl|images\Exercises\biceps\cable=curl.jpg|upperbiceps|8-12/set
+concentration-curl|Concentration Curl|images\Exercises\biceps\concentration-curl.jpg|lowerchest|8-12/set
+dumbell-curl|Dumbell Curl|images\Exercises\biceps\dumbell-curl.jpg|lowerchest|8-12/set
+preacher-curl|Preacher curl|images\Exercises\biceps\preacher-curl.jpg|upperchest|8-12/set
+
+# ─────── DETAILS FOR barbell-curl ───────
+barbell-curl|Title|Barbell curl
+barbell-curl|Image|images\Exercises\biceps\barbell-curl.jpg
+barbell-curl|Type|Isolation Exercise
+barbell-curl|Movement|Curl
+barbell-curl|Equipment|Barbell, EZ Bar
+barbell-curl|Primary Target|Biceps Brachii
+barbell-curl|Secondary Target|Forearms, Shoulders
+barbell-curl|Reps For Growth|3‑4 sets of 8‑12 reps
+barbell-curl|Reps For Strength|4‑6 sets of 3‑6 reps
+barbell-curl|Reps For Endurance|2‑3 sets of 12‑20 reps
+barbell-curl|Benefit|Isolates biceps effectively
+barbell-curl|Benefit|Improves grip strength
+barbell-curl|Benefit|Enhances forearm development
+
+# ─────── DETAILS FOR cable-curl ───────
+cable-curl|Title|Cable Curl
+cable-curl|Image|images\Exercises\biceps\cable=curl.jpg
+cable-curl|Type|Isolation Exercise
+cable-curl|Movement|Curl
+cable-curl|Equipment|Cable Machine
+cable-curl|Primary Target|Biceps Brachii
+cable-curl|Secondary Target|Forearms, Shoulders
+cable-curl|Reps For Growth|3‑4 sets of 8‑12 reps
+cable-curl|Reps For Strength|4‑5 sets of 6‑8 reps
+cable-curl|Reps For Endurance|2‑3 sets of 12‑15 reps
+cable-curl|Benefit|Isolates biceps effectively
+cable-curl|Benefit|Reduces elbow strain
+cable-curl|Benefit|Improves muscle activation
+
+# ─────── DETAILS FOR concentration-curl ───────
+concentration-curl|Title|Concentration Curl
+concentration-curl|Image|images\Exercises\biceps\concentration-curl.jpg
+concentration-curl|Type|Isolation Exercise
+concentration-curl|Movement|Curl
+concentration-curl|Equipment|Dumbbell, Bench
+concentration-curl|Primary Target|Biceps Brachii
+concentration-curl|Secondary Target|Forearms, Shoulders
+concentration-curl|Reps For Growth|3‑4 sets of 8‑12 reps
+concentration-curl|Reps For Strength|4‑6 sets of 3‑6 reps
+concentration-curl|Reps For Endurance|2‑3 sets of 12‑20 reps
+concentration-curl|Benefit|Isolates biceps effectively
+concentration-curl|Benefit|Reduces shoulder strain
+concentration-curl|Benefit|Improves mind-muscle connection
+
+# ─────── DETAILS FOR dumbell-curl ───────
+dumbell-curl|Title|Barbell Back Squat
+dumbell-curl|Image|images\Exercises\biceps\dumbell-curl.jpg
+dumbell-curl|Type|Compound Exercise
+dumbell-curl|Movement|Squat Pattern
+dumbell-curl|Equipment|Barbell, Dumbbells
+dumbell-curl|Primary Target|Biceps Brachii
+dumbell-curl|Secondary Target|Forearms, Shoulders
+dumbell-curl|Reps For Growth|3‑4 sets of 8‑12 reps
+dumbell-curl|Reps For Strength|4‑6 sets of 3‑6 reps
+dumbell-curl|Reps For Endurance|2‑3 sets of 12‑20 reps
+dumbell-curl|Benefit|Full-body strength and hypertrophy
+dumbell-curl|Benefit|Improves core stability and posture
+
+# ─────── DETAILS FOR preacher-curl ───────
+preacher-curl|Title|Preacher Curl
+preacher-curl|Image|images\Exercises\biceps\preacher-curl.jpg
+preacher-curl|Type|Isolation Exercise
+preacher-curl|Movement|Curl
+preacher-curl|Equipment|Preacher Curl Bench, Dumbbell
+preacher-curl|Primary Target|Biceps Brachii
+preacher-curl|Secondary Target|Forearms, Shoulders
+preacher-curl|Reps For Growth|3‑4 sets of 8‑12 reps
+preacher-curl|Reps For Strength|4‑6 sets of 6‑10 reps
+preacher-curl|Reps For Endurance|2‑3 sets of 15‑20 reps
+preacher-curl|Benefit|Isolates biceps effectively
+preacher-curl|Benefit|Reduces shoulder strain
+preacher-curl|Benefit|Improves mind-muscle connection

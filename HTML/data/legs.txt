@@ -1,0 +1,79 @@
+# ─────── LIST OF EXERCISES ───────
+bulgarian-split-squat|Bulgarian Split Squat|images\Exercises\Legs\bulgarian-split-squat.jpg|upperlegs|8-10/set
+running-lunges|Running Lunges|images\Exercises\Legs\running-linges.jpg|midlegs|8-12/set
+leg-press|Leg Press|images\Exercises\Legs\Legpress.jpg|lowerchest|8-12/set
+barbell-back-squat|Barbell Back Squat|images\Exercises\Legs\barbell-back-squat.jpg|lowerchest|8-12/set
+seated-leg-curl|Seated leg curl|images\Exercises\Legs\seated-leg-curl.jpg|upperchest|8-12/set
+
+# ─────── DETAILS FOR bulgarian-split-squat ───────
+bulgarian-split-squat|Title|Bulgarian Split Squat
+bulgarian-split-squat|Image|images\Exercises\Legs\bulgarian-split-squat.jpg
+bulgarian-split-squat|Type|Unilateral Compound Exercise
+bulgarian-split-squat|Movement|Squat Pattern
+bulgarian-split-squat|Equipment|Dumbbells or Bodyweight
+bulgarian-split-squat|Primary Target|Quadriceps, Glutes
+bulgarian-split-squat|Secondary Target|Hamstrings
+bulgarian-split-squat|Reps For Growth|3‑4 sets of 8‑12 reps
+bulgarian-split-squat|Reps For Strength|4‑6 sets of 3‑6 reps
+bulgarian-split-squat|Reps For Endurance|2‑3 sets of 12‑20 reps
+bulgarian-split-squat|Benefit|Improves leg strength individually
+bulgarian-split-squat|Benefit|Enhances core and joint stability
+
+# ─────── DETAILS FOR running-lunges ───────
+running-lunges|Title|Running Lunges
+running-lunges|Image|images\Exercises\Legs\running-linges.jpg
+running-lunges|Type|Compound Exercise
+running-lunges|Movement|Lunge Pattern
+running-lunges|Equipment|Bodyweight or Dumbbells
+running-lunges|Primary Target|Glutes, Quadriceps
+running-lunges|Secondary Target|Hamstrings, Core
+running-lunges|Reps For Growth|3‑4 sets of 8‑12 reps
+running-lunges|Reps For Strength|4‑5 sets of 6‑8 reps
+running-lunges|Reps For Endurance|2‑3 sets of 12‑15 reps
+running-lunges|Benefit|Builds balance and coordination
+running-lunges|Benefit|Great for unilateral leg strength
+
+# ─────── DETAILS FOR leg-press ───────
+leg-press|Title|Leg Press
+leg-press|Image|images\Exercises\Legs\Legpress.jpg
+leg-press|Type|Leg Press Machine
+leg-press|Movement|Pressing
+leg-press|Equipment|Barbell, Inclined Bench
+leg-press|Primary Target|Quadriceps, Glutes
+leg-press|Secondary Target|Hamstrings
+leg-press|Reps For Growth|3‑4 sets of 8‑12 reps
+leg-press|Reps For Strength|4‑6 sets of 3‑6 reps
+leg-press|Reps For Endurance|2‑3 sets of 12‑20 reps
+leg-press|Benefit|Safe and controlled resistance
+leg-press|Benefit|Effective for hypertrophy
+leg-press|Benefit|Engages shoulders more than flat bench
+
+# ─────── DETAILS FOR barbell-back-squat ───────
+barbell-back-squat|Title|Barbell Back Squat
+barbell-back-squat|Image|images\Exercises\Legs\barbell-back-squat.jpg
+barbell-back-squat|Type|Compound Exercise
+barbell-back-squat|Movement|Squat Pattern
+barbell-back-squat|Equipment|Barbell, Squat Rack
+barbell-back-squat|Primary Target|Quadriceps, Glutes
+barbell-back-squat|Secondary Target|Hamstrings, Core
+barbell-back-squat|Reps For Growth|3‑4 sets of 8‑12 reps
+barbell-back-squat|Reps For Strength|4‑6 sets of 3‑6 reps
+barbell-back-squat|Reps For Endurance|2‑3 sets of 12‑20 reps
+barbell-back-squat|Benefit|Full-body strength and hypertrophy
+barbell-back-squat|Benefit|Improves core stability and posture
+
+# ─────── DETAILS FOR seated-leg-curl ───────
+seated-leg-curl|Title|Seated Leg Curl
+seated-leg-curl|Image|images\Exercises\Legs\seated-leg-curl.jpg
+seated-leg-curl|Type|Isolation Exercise
+seated-leg-curl|Movement|Leg Curl
+seated-leg-curl|Equipment|Leg Curl Machine
+seated-leg-curl|Primary Target|Hamstrings
+seated-leg-curl|Secondary Target|Calves, Glutes
+seated-leg-curl|Reps For Growth|3‑4 sets of 8‑12 reps
+seated-leg-curl|Reps For Strength|4‑6 sets of 6‑10 reps
+seated-leg-curl|Reps For Endurance|2‑3 sets of 15‑20 reps
+seated-leg-curl|Benefit|Isolates hamstrings effectively
+seated-leg-curl|Benefit|Reduces lower back strain
+seated-leg-curl|Benefit|Improves knee joint stability
+
