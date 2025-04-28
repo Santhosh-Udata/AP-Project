@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $isAdmin) {
 
 
     </div>
-    <?php if ($isAdmin): ?>
+    <?php if ($isAdmin && $_SESSION['currentUser']): ?>
         <div class="EDIT">
             <button id="toggle-edit">EDIT STORE</button>
         </div>
