@@ -34,14 +34,14 @@ $option = [
 ?>
 
 <?php
-session_start();
-if (isset($_GET['username'])) {
+if (isset($_GET['username']) && trim($_GET['username']) !== '') {
     $_SESSION['currentUser'] = trim($_GET['username']);
 }
 $isAdmin = (
     isset($_SESSION['currentUser'])
     && strtolower($_SESSION['currentUser']) === 'admin'
 );
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && $isAdmin) {
     $lines = [];
@@ -193,7 +193,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $isAdmin) {
 
 
     </div>
-    <?php if ($isAdmin && $_SESSION['currentUser']): ?>
+    <?php if ($isAdmin): ?>
         <div class="EDIT">
             <button id="toggle-edit">EDIT STORE</button>
         </div>
